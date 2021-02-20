@@ -252,7 +252,8 @@ Wastelander
 	/datum/outfit/loadout/petro,
 	/datum/outfit/loadout/follower,
 	/datum/outfit/loadout/merchant,
-	/datum/outfit/loadout/gambler)
+	/datum/outfit/loadout/gambler,
+	/datum/outfit/loadout/tribal)
 
 /datum/outfit/job/wasteland/f13wastelander
 	name = "Wastelander"
@@ -330,6 +331,12 @@ Wastelander
 	head = list(/obj/item/clothing/head/fedora,
  	/obj/item/clothing/head/f13/gambler)
 
+/datum/outfit/loadout/tribal
+	name = "Tribal"
+	uniform = /obj/item/clothing/under/f13/tribe
+	suit = /obj/item/clothing/suit/armor/f13/tribal
+	shoes = /obj/item/clothing/shoes/f13/rag
+	gloves = /obj/item/clothing/gloves/f13/handwraps
 
 /*
 Punished Raider
