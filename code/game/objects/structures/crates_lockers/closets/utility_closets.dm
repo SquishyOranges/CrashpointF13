@@ -136,6 +136,26 @@
 	new /obj/item/clothing/suit/radiation(src)
 	new /obj/item/clothing/head/radiation(src)
 
+//Hazard closet. Much better in every way to Biosuits and Radsuits.
+/obj/structure/closet/hazard
+	name = "hazard suit closet"
+	desc = "It's a storage unit for hazard suits."
+	icon_state = "eng"
+	icon_door = "eng_rad"
+
+/obj/structure/closet/hazard/PopulateContents()
+	..()
+	new /obj/item/clothing/mask/gas(src)
+	new /obj/item/clothing/mask/gas(src)
+	new /obj/item/tank/internals/oxygen(src)
+	new /obj/item/tank/internals/oxygen(src)
+	new /obj/item/geiger_counter(src)
+	new /obj/item/geiger_counter(src)
+	new /obj/item/clothing/suit/bio_suit/f13/hazmat(src)
+	new /obj/item/clothing/head/bio_hood/f13/hazmat(src)
+	new /obj/item/clothing/suit/bio_suit/f13/hazmat(src)
+	new /obj/item/clothing/head/bio_hood/f13/hazmat(src)
+
 /*
  * Bombsuit closet
  */

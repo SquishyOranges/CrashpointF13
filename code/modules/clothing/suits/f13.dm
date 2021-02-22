@@ -138,7 +138,15 @@
 	icon = 'icons/fallout/clothing/suits.dmi'
 	icon_state = "hazmat"
 	item_state = "hazmat_suit"
+	allowed = list(/obj/item/flashlight, /obj/item/tank/internals, /obj/item/geiger_counter)
+	armor = list("melee" = 15, "bullet" = 15, "laser" = 5,"energy" = 5, "bomb" = 5, "bio" = 100, "rad" = 100, "fire" = 80, "acid" = 100)
+	strip_delay = 75
+	equip_delay_other = 75
 
+/obj/item/clothing/suit/bio_suit/f13/hazmat/ComponentInitialize()
+	. = ..()
+	AddComponent(/datum/component/rad_insulation, RAD_NO_INSULATION, TRUE, FALSE)
+	
 /obj/item/clothing/head/bio_hood/f13/hazmat
 	name = "hazmat hood"
 	desc = "My star, my perfect silence."
@@ -146,9 +154,14 @@
 	icon_state = "hazmat"
 	item_state = "hazmat_helmet"
 	flags_inv = HIDEMASK|HIDEEARS|HIDEEYES|HIDEFACE|HIDEHAIR|HIDEFACIALHAIR
+	armor = list("melee" = 15, "bullet" = 15, "laser" = 5,"energy" = 5, "bomb" = 5, "bio" = 100, "rad" = 100, "fire" = 80, "acid" = 100)
+	strip_delay = 75
+	equip_delay_other = 75
 
-
-
+/obj/item/clothing/head/bio_hood/f13/hazmat/ComponentInitialize()
+	. = ..()
+	AddComponent(/datum/component/rad_insulation, RAD_NO_INSULATION, TRUE, FALSE)
+	
 //Fallout 13 toggle apparel directory
 
 /obj/item/clothing/suit/toggle/labcoat/f13
