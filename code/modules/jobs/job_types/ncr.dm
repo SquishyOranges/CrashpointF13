@@ -341,11 +341,11 @@ Corporal
 	name = "Scout"
 	uniform = /obj/item/clothing/under/f13/ncr/scout
 	suit = /obj/item/clothing/suit/armor/f13/ncrarmor/scout
-	suit_store = /obj/item/gun/ballistic/shotgun/remington/scoped
+	suit_store = /obj/item/gun/ballistic/automatic/marksman/servicerifle
 	head = /obj/item/clothing/head/beret/ncr_scout
 	shoes = /obj/item/clothing/shoes/f13/military/ncr_scout
 	backpack_contents = list(
-		/obj/item/ammo_box/a762=3,
+		/obj/item/ammo_box/magazine/m556/rifle=2,
 		/obj/item/twohanded/binocs=1)
 /*
 NCR Heavy Trooper

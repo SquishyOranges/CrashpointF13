@@ -1744,11 +1744,10 @@
 /turf/open/floor/wood/f13/old,
 /area/f13/legioncamp)
 "afC" = (
-/obj/machinery/recharge_station,
-/turf/open/floor/plasteel/f13{
-	icon_state = "dark"
-	},
-/area/f13/legioncamp)
+/obj/effect/decal/waste,
+/turf/open/floor/wood/f13/old,
+/turf/open/floor/plating/f13/inside/mountain,
+/area/f13/underground/mountain)
 "afD" = (
 /turf/closed/wall/r_wall,
 /area/f13/klamat/mine)
@@ -18705,6 +18704,7 @@
 /area/f13/sunny_dale)
 "bav" = (
 /obj/machinery/light,
+/obj/structure/closet/hazard,
 /turf/open/floor/plasteel/f13{
 	icon_state = "floorgrime"
 	},
@@ -23029,10 +23029,12 @@
 /turf/open/floor/wood/f13/old,
 /area/f13/legioncamp)
 "bmE" = (
-/obj/machinery/recharge_station,
-/turf/open/floor/plasteel/f13{
-	icon_state = "floorgrime"
-	},
+/obj/structure/table,
+/obj/item/circular_saw,
+/obj/item/scalpel,
+/obj/item/surgicaldrill,
+/obj/item/razor,
+/turf/open/floor/plasteel/cafeteria,
 /area/f13/ncr_main)
 "bmF" = (
 /obj/structure/closet/crate/footlocker/ncr,
@@ -23041,9 +23043,14 @@
 	},
 /area/f13/ncr_main)
 "bmG" = (
-/obj/machinery/recharge_station,
-/turf/open/floor/wood/f13/old,
-/area/f13/den)
+/obj/structure/spacevine{
+	name = "Mutant Vines"
+	},
+/turf/open/indestructible/ground/outside/desert,
+/turf/closed/wall/r_wall/f13composite{
+	icon_state = "ruinswindowbrokenvertical"
+	},
+/area/f13/desert)
 "bmH" = (
 /obj/machinery/recharge_station,
 /turf/open/floor/plasteel/f13{
@@ -23055,10 +23062,11 @@
 /turf/open/floor/plating,
 /area/f13/brotherhood)
 "bmJ" = (
-/obj/effect/decal/waste,
-/turf/open/floor/wood/f13/old,
-/turf/open/floor/plating/f13/inside/mountain,
-/area/f13/underground/mountain)
+/obj/structure/closet/hazard,
+/turf/open/floor/plasteel/f13{
+	icon_state = "yellowdirtysolid"
+	},
+/area/f13/klamat/mine)
 "bmK" = (
 /obj/item/caution,
 /obj/item/caution,
@@ -23126,21 +23134,21 @@
 /turf/open/floor/wood/f13/old,
 /area/f13/raider_mall)
 "bmV" = (
-/obj/structure/spacevine{
-	name = "Mutant Vines"
-	},
-/turf/open/indestructible/ground/outside/desert,
-/turf/closed/wall/r_wall/f13composite{
-	icon_state = "ruinswindowbrokenvertical"
-	},
-/area/f13/desert)
-"bmW" = (
 /obj/effect/decal/cleanable/shreds,
 /turf/open/space/basic,
 /turf/open/floor/plating{
 	icon_state = "platingdmg2"
 	},
 /area/f13/powerplant)
+"bmW" = (
+/obj/machinery/light{
+	dir = 1
+	},
+/obj/structure/closet/hazard,
+/turf/open/floor/plating/f13/outside/road{
+	icon_state = "horizontaltopbordertop0"
+	},
+/area/f13/ncr_main)
 "bmX" = (
 /obj/item/disk/surgery/pacification,
 /turf/open/floor/plasteel/f13{
@@ -23153,6 +23161,12 @@
 /turf/closed/wall/r_wall/f13composite,
 /area/f13/desert)
 "bmZ" = (
+/obj/structure/closet/radiation,
+/turf/open/floor/plasteel/f13{
+	icon_state = "floorgrime"
+	},
+/area/f13/powerplant)
+"bna" = (
 /obj/structure/spacevine{
 	name = "Mutant Vines"
 	},
@@ -23161,7 +23175,7 @@
 	icon_state = "ruinswindowbroken"
 	},
 /area/f13/desert)
-"bna" = (
+"bnb" = (
 /obj/structure/spacevine{
 	name = "Mutant Vines"
 	},
@@ -24993,13 +25007,6 @@
 /obj/item/surgical_drapes,
 /turf/open/floor/plasteel/cafeteria,
 /area/f13/ncr_main)
-"bsy" = (
-/obj/structure/table,
-/obj/item/circular_saw,
-/obj/item/scalpel,
-/obj/item/surgicaldrill,
-/turf/open/floor/plasteel/cafeteria,
-/area/f13/ncr_main)
 "bsz" = (
 /obj/structure/table,
 /obj/item/hemostat,
@@ -25189,13 +25196,12 @@
 	},
 /area/f13/ncr_main)
 "bsZ" = (
-/obj/machinery/light{
-	dir = 1
-	},
+/obj/machinery/light,
+/obj/structure/closet/hazard,
 /turf/open/floor/plating/f13/outside/road{
-	icon_state = "horizontaltopbordertop0"
+	icon_state = "horizontalbottomborderbottom0"
 	},
-/area/f13/ncr_main)
+/area/f13/sunny_dale)
 "bta" = (
 /obj/structure/rack,
 /turf/open/floor/plating/f13/outside/road{
@@ -26366,12 +26372,6 @@
 /obj/structure/closet,
 /obj/item/clothing/under/sl_suit,
 /obj/item/clothing/shoes/laceup,
-/turf/open/floor/plasteel/f13{
-	icon_state = "floorgrime"
-	},
-/area/f13/powerplant)
-"bwm" = (
-/obj/structure/closet/radiation,
 /turf/open/floor/plasteel/f13{
 	icon_state = "floorgrime"
 	},
@@ -29659,12 +29659,6 @@
 /obj/item/dice,
 /turf/open/floor/wood/f13/old,
 /area/f13/den)
-"bFR" = (
-/obj/machinery/light,
-/turf/open/floor/plating/f13/outside/road{
-	icon_state = "horizontalbottomborderbottom0"
-	},
-/area/f13/sunny_dale)
 "bFS" = (
 /obj/item/clothing/suit/armor/f13/brokenpa,
 /obj/item/storage/trash_stack,
@@ -38577,7 +38571,7 @@ scY
 scY
 brP
 scY
-bsy
+bmE
 boq
 bsS
 vQi
@@ -39787,7 +39781,7 @@ bsB
 boq
 bvD
 vQi
-bmE
+vQi
 vQi
 vQi
 buA
@@ -47806,7 +47800,7 @@ aag
 abq
 aag
 bor
-bmE
+vQi
 vQi
 boq
 afp
@@ -49433,7 +49427,7 @@ brW
 boq
 aFW
 boq
-bsZ
+bmW
 bsV
 bRc
 bRc
@@ -62308,7 +62302,7 @@ boT
 boQ
 boQ
 btb
-bwm
+bmZ
 bwF
 bxb
 boQ
@@ -64327,7 +64321,7 @@ byd
 btb
 byF
 byG
-bmW
+bmV
 bqt
 bzY
 boQ
@@ -78640,7 +78634,7 @@ aab
 aab
 aKh
 aKh
-bmJ
+afC
 aab
 aab
 aaf
@@ -79442,7 +79436,7 @@ aaf
 aaf
 aaf
 aab
-bmJ
+afC
 aKh
 aKh
 aab
@@ -79846,7 +79840,7 @@ aaf
 aab
 aab
 aKh
-bmJ
+afC
 aab
 aaf
 aaf
@@ -88973,7 +88967,7 @@ agZ
 bxl
 ahK
 agO
-agR
+bmJ
 afD
 aaf
 aaf
@@ -101737,8 +101731,8 @@ brA
 brA
 aaZ
 abg
-bmZ
 bna
+bnb
 aaz
 aaI
 aag
@@ -107752,7 +107746,7 @@ aaI
 brC
 aeO
 bst
-bmZ
+bna
 bls
 aze
 aaZ
@@ -111752,8 +111746,8 @@ aaU
 aDU
 aCN
 aaU
-bmV
-bmV
+bmG
+bmG
 aaU
 aaI
 bhQ
@@ -115013,7 +115007,7 @@ bET
 bET
 bET
 bET
-bFR
+bsZ
 aHk
 aab
 aab
@@ -118982,8 +118976,8 @@ aag
 aag
 aze
 brA
-bmV
-bmV
+bmG
+bmG
 aaU
 aaU
 aFp
@@ -130499,7 +130493,7 @@ aGG
 aGG
 aLB
 aGG
-bmG
+aGG
 aGq
 afp
 afp
@@ -141589,7 +141583,7 @@ aag
 aag
 aag
 aam
-afC
+aMJ
 aMJ
 aMJ
 aMJ

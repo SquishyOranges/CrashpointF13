@@ -18401,6 +18401,10 @@
 /obj/structure/bed/mattress/pregame,
 /turf/open/floor/f13/wood,
 /area/f13/village)
+"aYC" = (
+/obj/structure/closet/hazard,
+/turf/open/floor/plating/tunnel,
+/area/f13/ncr)
 "aYD" = (
 /turf/open/indestructible/ground/outside/dirt{
 	dir = 8;
@@ -18823,6 +18827,13 @@
 	tag = "icon-housewood3-broken"
 	},
 /area/f13/village)
+"aZD" = (
+/obj/structure/closet/hazard,
+/turf/open/floor/f13{
+	icon_state = "darkredfull";
+	tag = "icon-darkredfull"
+	},
+/area/f13/bunker)
 "aZE" = (
 /obj/effect/spawner/lootdrop/f13/weapon/gun/random,
 /turf/open/floor/f13/wood,
@@ -24537,10 +24548,6 @@
 	tag = "icon-bluedirtychess2"
 	},
 /area/f13/city)
-"boN" = (
-/obj/machinery/recharge_station,
-/turf/open/floor/wood/f13/old,
-/area/f13/village)
 "boO" = (
 /obj/machinery/jukebox,
 /turf/open/floor/f13/wood,
@@ -24726,13 +24733,6 @@
 /obj/effect/spawner/lootdrop/trash,
 /turf/open/indestructible/ground/inside/mountain,
 /area/f13/tunnel)
-"bps" = (
-/obj/machinery/recharge_station,
-/turf/open/floor/f13{
-	icon_state = "floorrusty";
-	tag = "icon-floorrusty"
-	},
-/area/f13/city)
 "bpt" = (
 /obj/machinery/door/morgue,
 /turf/open/floor/f13/wood,
@@ -25602,6 +25602,14 @@
 	tag = "icon-bluedirtychess2"
 	},
 /area/f13/city)
+"brN" = (
+/obj/structure/closet/hazard,
+/turf/open/floor/plasteel/barber{
+	icon = 'icons/turf/f13floors2.dmi';
+	icon_state = "bluerustychess2";
+	tag = "icon-bluerustychess2"
+	},
+/area/f13/building)
 "brO" = (
 /obj/structure/fence/corner{
 	dir = 4
@@ -25622,6 +25630,12 @@
 	},
 /turf/open/floor/f13/wood,
 /area/f13/legion)
+"brR" = (
+/obj/structure/closet/hazard,
+/turf/open/floor/f13{
+	icon_state = "floorrusty"
+	},
+/area/f13/building)
 "brS" = (
 /turf/closed/indestructible/vaultdoor{
 	desc = "One of the doors to enter and exit the aircraft. This one appears jammed, or perhaps welded shut.";
@@ -42922,7 +42936,7 @@ aBZ
 aTw
 aBZ
 aEl
-bps
+aGv
 aGv
 aGv
 aEl
@@ -49060,7 +49074,7 @@ agk
 bed
 acC
 acC
-bed
+brN
 agk
 adH
 adY
@@ -53516,7 +53530,7 @@ aae
 aae
 aae
 bDY
-ajb
+aYC
 ajb
 ajb
 ajU
@@ -55714,7 +55728,7 @@ aae
 aae
 aae
 aHF
-boN
+aWu
 aWu
 aWu
 aWu
@@ -94795,7 +94809,7 @@ aZj
 aZj
 bbB
 bbL
-aZj
+aZD
 aaD
 aae
 aae
@@ -96977,7 +96991,7 @@ ahM
 ahj
 afz
 afS
-aiz
+brR
 afz
 aat
 aat
@@ -97490,7 +97504,7 @@ agD
 ahN
 afS
 afz
-afS
+aiz
 aiB
 afz
 aat
