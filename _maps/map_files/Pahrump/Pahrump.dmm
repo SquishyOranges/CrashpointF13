@@ -4846,6 +4846,7 @@
 /obj/structure/closet,
 /obj/item/clothing/under/f13/doctor,
 /obj/effect/spawner/lootdrop/f13/weapon/gun/ammo/tier2,
+/obj/effect/spawner/lootdrop/f13/weapon/gun/tier2,
 /turf/open/floor/f13/wood,
 /area/f13/building)
 "anA" = (
@@ -4947,9 +4948,9 @@
 /turf/open/floor/f13/wood,
 /area/f13/ncr)
 "anO" = (
-/mob/living/simple_animal/hostile/handy/gutsy/enclave,
-/turf/open/indestructible/ground/inside/mountain,
-/area/f13/caves)
+/obj/effect/spawner/lootdrop/f13/weapon/gun/tier2,
+/turf/open/floor/f13/wood,
+/area/f13/village)
 "anP" = (
 /obj/structure/closet/crate/footlocker/ncr,
 /obj/effect/decal/cleanable/dirt,
@@ -5071,9 +5072,13 @@
 /turf/open/floor/f13/wood,
 /area/f13/ncr)
 "aoj" = (
-/mob/living/simple_animal/hostile/handy/protectron/enclave,
-/turf/open/indestructible/ground/inside/mountain,
-/area/f13/caves)
+/obj/structure/table/wood/settler,
+/obj/effect/spawner/lootdrop/f13/armor/random,
+/turf/open/floor/f13/wood{
+	icon_state = "housewood2";
+	tag = "icon-housewood2"
+	},
+/area/f13/village)
 "aok" = (
 /obj/machinery/newscaster/security_unit{
 	pixel_y = 32
@@ -11930,6 +11935,7 @@
 /area/f13/wasteland)
 "aGn" = (
 /obj/structure/closet/bus,
+/obj/effect/spawner/lootdrop/f13/armor/costumes,
 /turf/open/indestructible/ground/outside/desert,
 /area/f13/wasteland)
 "aGo" = (
@@ -13919,9 +13925,9 @@
 	},
 /area/f13/wasteland)
 "aLI" = (
-/obj/machinery/mineral/mint,
-/turf/open/floor/f13/wood,
-/area/f13/tunnel)
+/mob/living/simple_animal/hostile/ghoul/reaver,
+/turf/open/indestructible/ground/outside/dirt,
+/area/f13/village)
 "aLJ" = (
 /obj/machinery/light/kebab_sign,
 /turf/open/indestructible/ground/outside/desert,
@@ -17323,11 +17329,9 @@
 /turf/open/floor/f13/wood,
 /area/f13/village)
 "aVu" = (
-/obj/structure/table/wood,
-/obj/item/storage/pill_bottle/chem_tin/radx,
-/obj/item/stack/f13Cash/random/bottle_cap/med,
-/turf/open/floor/f13/wood,
-/area/f13/village)
+/mob/living/simple_animal/hostile/ghoul,
+/turf/open/indestructible/ground/outside/dirt,
+/area/f13/wasteland)
 "aVv" = (
 /obj/structure/table/wood,
 /obj/item/paper_bin,
@@ -17595,7 +17599,7 @@
 /area/f13/radiation)
 "aWk" = (
 /obj/structure/table/wood,
-/obj/effect/spawner/lootdrop/f13/weapon/gun/random,
+/obj/effect/spawner/lootdrop/f13/weapon/gun/tier3,
 /turf/open/floor/f13/wood,
 /area/f13/radiation)
 "aWl" = (
@@ -19593,7 +19597,7 @@
 	},
 /area/f13/bunker)
 "bbz" = (
-/mob/living/simple_animal/hostile/ghoul/glowing,
+/mob/living/simple_animal/hostile/ghoul/reaver,
 /turf/open/floor/plasteel/barber{
 	icon_state = "platingdmg3";
 	tag = "icon-platingdmg3"
@@ -19668,7 +19672,7 @@
 	},
 /area/f13/village)
 "bbK" = (
-/mob/living/simple_animal/hostile/ghoul/glowing,
+/mob/living/simple_animal/hostile/ghoul/reaver,
 /turf/open/floor/plasteel/barber{
 	icon_state = "plating";
 	tag = "icon-plating"
@@ -19745,9 +19749,10 @@
 	},
 /area/f13/building)
 "bbW" = (
-/obj/structure/sink,
-/turf/closed/mineral/random/low_chance,
-/area/f13/caves)
+/obj/structure/chair/bench,
+/mob/living/simple_animal/hostile/ghoul,
+/turf/open/indestructible/ground/outside/dirt,
+/area/f13/village)
 "bbX" = (
 /obj/structure/table/wood,
 /obj/item/mining_scanner,
@@ -19848,7 +19853,6 @@
 /obj/structure/rack,
 /obj/item/clothing/suit/radiation,
 /obj/item/clothing/head/radiation,
-/obj/item/storage/pill_bottle/chem_tin/radx,
 /obj/item/storage/pill_bottle/chem_tin/radx,
 /turf/open/floor/plasteel/barber{
 	icon = 'icons/turf/f13floors2.dmi';
@@ -22486,8 +22490,6 @@
 "bjh" = (
 /obj/structure/rack,
 /obj/item/storage/pill_bottle/chem_tin/radx,
-/obj/item/storage/pill_bottle/chem_tin/radx,
-/obj/item/storage/pill_bottle/chem_tin/radx,
 /turf/open/floor/f13/wood,
 /area/f13/city)
 "bji" = (
@@ -23076,7 +23078,6 @@
 /area/f13/clinic)
 "bkQ" = (
 /obj/structure/rack,
-/obj/item/storage/pill_bottle/chem_tin/radx,
 /obj/item/storage/pill_bottle/chem_tin/radx,
 /obj/effect/spawner/lootdrop/f13/weapon/melee/random,
 /turf/open/floor/f13/wood,
@@ -24171,9 +24172,9 @@
 /turf/open/indestructible/ground/inside/mountain,
 /area/f13/tunnel)
 "bnS" = (
-/obj/item/jammer,
-/turf/open/indestructible/ground/inside/mountain,
-/area/f13/caves)
+/mob/living/simple_animal/hostile/ghoul/glowing,
+/turf/open/floor/f13/wood,
+/area/f13/radiation)
 "bnT" = (
 /obj/structure/window/fulltile/house,
 /turf/open/floor/f13{
@@ -24379,7 +24380,6 @@
 	},
 /obj/item/reagent_containers/hypospray/medipen/stimpak,
 /obj/item/reagent_containers/blood/radaway,
-/obj/item/storage/pill_bottle/chem_tin/radx,
 /turf/open/floor/f13/wood,
 /area/f13/clinic)
 "bou" = (
@@ -24591,8 +24591,6 @@
 /area/f13/tunnel)
 "boV" = (
 /obj/structure/rack,
-/obj/item/storage/pill_bottle/chem_tin/radx,
-/obj/item/storage/pill_bottle/chem_tin/radx,
 /turf/open/floor/f13/wood,
 /area/f13/chapel)
 "boW" = (
@@ -28027,7 +28025,7 @@
 /area/f13/tunnel)
 "bBv" = (
 /obj/structure/closet/crate/miningcar,
-/obj/effect/spawner/lootdrop/f13/weapon/gun/random_high,
+/obj/effect/spawner/lootdrop/f13/weapon/gun/random,
 /turf/open/indestructible/ground/inside/mountain,
 /area/f13/tunnel)
 "bBw" = (
@@ -30215,9 +30213,10 @@
 	},
 /area/f13/tunnel)
 "bKe" = (
-/obj/item/storage/trash_stack,
+/obj/effect/spawner/lootdrop/f13/armor/random,
+/obj/structure/closet/crate/miningcar,
 /turf/open/indestructible/ground/inside/mountain,
-/area/f13/tunnel)
+/area/f13/caves)
 "bKf" = (
 /obj/machinery/light/small{
 	dir = 8
@@ -30438,9 +30437,8 @@
 	},
 /area/f13/clinic)
 "bKO" = (
-/obj/effect/mine/stun,
-/turf/open/indestructible/ground/inside/mountain,
-/area/f13/tunnel)
+/turf/closed/mineral/random/high_chance,
+/area/f13/caves)
 "bKP" = (
 /turf/open/indestructible/ground/inside/mountain,
 /area/f13/radiation)
@@ -30493,7 +30491,7 @@
 "bLb" = (
 /mob/living/simple_animal/hostile/gecko,
 /turf/open/indestructible/ground/inside/mountain,
-/area/f13/tunnel)
+/area/f13/caves)
 "bLc" = (
 /obj/structure/barricade/wooden,
 /turf/open/indestructible/ground/inside/mountain,
@@ -30511,8 +30509,8 @@
 	},
 /area/f13/clinic)
 "bLg" = (
-/obj/effect/decal/waste,
-/turf/open/indestructible/ground/inside/mountain,
+/mob/living/simple_animal/hostile/spawner/scorpion,
+/turf/open/floor/f13/wood,
 /area/f13/tunnel)
 "bLh" = (
 /mob/living/simple_animal/hostile/gecko,
@@ -30643,11 +30641,11 @@
 	tag = "icon-gibmid1"
 	},
 /turf/open/indestructible/ground/inside/mountain,
-/area/f13/tunnel)
+/area/f13/caves)
 "bLH" = (
-/obj/effect/spawner/lootdrop/f13/weapon/gun/random_high,
+/obj/effect/spawner/lootdrop/f13/weapon/gun/random,
 /turf/open/indestructible/ground/inside/mountain,
-/area/f13/tunnel)
+/area/f13/caves)
 "bLI" = (
 /obj/effect/decal/remains/human,
 /obj/effect/decal/cleanable/blood/old{
@@ -30655,7 +30653,7 @@
 	tag = "icon-gibbearcore"
 	},
 /turf/open/indestructible/ground/inside/mountain,
-/area/f13/tunnel)
+/area/f13/caves)
 "bLJ" = (
 /obj/structure/reagent_dispensers/barrel/old,
 /turf/open/indestructible/ground/inside/mountain,
@@ -30740,7 +30738,7 @@
 	tag = "icon-gib5-old"
 	},
 /turf/open/indestructible/ground/inside/mountain,
-/area/f13/tunnel)
+/area/f13/caves)
 "bLY" = (
 /obj/effect/decal/waste{
 	icon_state = "goo12";
@@ -30796,19 +30794,9 @@
 	},
 /area/f13/clinic)
 "bMi" = (
-/obj/effect/decal/cleanable/blood/old{
-	icon_state = "gibbear1";
-	tag = "icon-gibbear1"
-	},
-/turf/open/indestructible/ground/inside/mountain,
-/area/f13/tunnel)
-"bMj" = (
-/obj/effect/decal/cleanable/blood/old{
-	icon_state = "gib2-old";
-	tag = "icon-gib2-old"
-	},
-/turf/open/indestructible/ground/inside/mountain,
-/area/f13/tunnel)
+/obj/structure/sink/well/dwell,
+/turf/open/indestructible/ground/inside/subway,
+/area/f13/sewer)
 "bMk" = (
 /obj/effect/spawner/lootdrop/trash,
 /mob/living/simple_animal/hostile/gecko,
@@ -30843,7 +30831,7 @@
 	tag = "icon-gib6-old"
 	},
 /turf/open/indestructible/ground/inside/mountain,
-/area/f13/tunnel)
+/area/f13/caves)
 "bMr" = (
 /obj/structure/reagent_dispensers/barrel/four,
 /obj/effect/decal/waste{
@@ -31014,15 +31002,11 @@
 	tag = "icon-greenrustyfull"
 	},
 /area/f13/clinic)
-"bMU" = (
-/obj/effect/spawner/lootdrop/f13/weapon/gun/ammo/tier2,
-/turf/open/indestructible/ground/inside/mountain,
-/area/f13/tunnel)
 "bMV" = (
 /obj/effect/decal/remains/human,
 /obj/effect/spawner/lootdrop/f13/armor/random,
 /turf/open/indestructible/ground/inside/mountain,
-/area/f13/tunnel)
+/area/f13/caves)
 "bMW" = (
 /obj/effect/decal/cleanable/blood/gibs/down{
 	icon_state = "gibtorso";
@@ -31226,7 +31210,7 @@
 	tag = "icon-floor6-old"
 	},
 /turf/open/indestructible/ground/inside/mountain,
-/area/f13/tunnel)
+/area/f13/caves)
 "bNz" = (
 /mob/living/simple_animal/hostile/radroach,
 /turf/open/indestructible/ground/inside/mountain,
@@ -31247,10 +31231,6 @@
 /obj/structure/ore_box,
 /turf/open/floor/f13/wood,
 /area/f13/building)
-"bNE" = (
-/obj/effect/spawner/lootdrop/f13/weapon/melee/random,
-/turf/open/indestructible/ground/inside/mountain,
-/area/f13/tunnel)
 "bNF" = (
 /obj/machinery/light/small{
 	dir = 8
@@ -31274,10 +31254,6 @@
 	tag = "icon-greenrustyfull"
 	},
 /area/f13/clinic)
-"bNH" = (
-/mob/living/simple_animal/hostile/radroach,
-/turf/open/indestructible/ground/inside/mountain,
-/area/f13/tunnel)
 "bNI" = (
 /obj/structure/rack,
 /obj/effect/spawner/lootdrop/f13/weapon/gun/random,
@@ -31360,10 +31336,6 @@
 	},
 /turf/open/floor/f13/wood,
 /area/f13/caves)
-"bNW" = (
-/obj/item/storage/trash_stack,
-/turf/closed/mineral/random/low_chance,
-/area/f13/tunnel)
 "bNX" = (
 /obj/machinery/light/small{
 	dir = 1
@@ -31407,10 +31379,6 @@
 	tag = "icon-greenrustyfull"
 	},
 /area/f13/clinic)
-"bOd" = (
-/obj/structure/barricade/wooden,
-/turf/closed/mineral/random/low_chance,
-/area/f13/tunnel)
 "bOe" = (
 /obj/structure/ladder/unbreakable{
 	height = 1;
@@ -31474,10 +31442,6 @@
 	},
 /turf/open/indestructible/ground/inside/subway,
 /area/f13/tunnel)
-"bOo" = (
-/obj/structure/grille/indestructable,
-/turf/closed/mineral/random/low_chance,
-/area/f13/caves)
 "bOp" = (
 /obj/item/reagent_containers/hypospray/medipen/stimpak/super,
 /turf/open/floor/f13{
@@ -31485,14 +31449,6 @@
 	tag = "icon-greenrustyfull"
 	},
 /area/f13/clinic)
-"bOq" = (
-/mob/living/simple_animal/hostile/radroach,
-/turf/closed/mineral/random/low_chance,
-/area/f13/tunnel)
-"bOr" = (
-/obj/effect/mine/stun,
-/turf/closed/mineral/random/low_chance,
-/area/f13/tunnel)
 "bOs" = (
 /obj/machinery/light/small,
 /turf/open/floor/f13{
@@ -31675,10 +31631,6 @@
 /obj/structure/barricade/wooden,
 /turf/open/indestructible/ground/inside/mountain,
 /area/f13/bunker)
-"bOU" = (
-/mob/living/simple_animal/hostile/deathclaw,
-/turf/open/indestructible/ground/inside/mountain,
-/area/f13/tunnel)
 "bOV" = (
 /obj/structure/table/reinforced,
 /obj/effect/spawner/lootdrop/f13/weapon/gun/ammo/tier4,
@@ -31786,7 +31738,7 @@
 "bPl" = (
 /obj/item/clothing/under/f13/brahmin,
 /turf/open/indestructible/ground/inside/mountain,
-/area/f13/tunnel)
+/area/f13/caves)
 "bPm" = (
 /obj/structure/rack,
 /obj/machinery/light/small{
@@ -31812,11 +31764,11 @@
 "bPp" = (
 /obj/item/clothing/shoes/f13/explorer,
 /turf/open/indestructible/ground/inside/mountain,
-/area/f13/tunnel)
+/area/f13/caves)
 "bPq" = (
 /obj/effect/spawner/lootdrop/f13/armor/random,
 /turf/open/indestructible/ground/inside/mountain,
-/area/f13/tunnel)
+/area/f13/caves)
 "bPr" = (
 /obj/structure/rack,
 /obj/effect/spawner/lootdrop/f13/weapon/gun/ammo/tier3,
@@ -35773,10 +35725,6 @@
 /obj/item/stack/sheet/bone,
 /turf/open/indestructible/ground/inside/mountain,
 /area/f13/caves)
-"cbt" = (
-/obj/effect/spawner/lootdrop/f13/medical/wasteland,
-/turf/open/indestructible/ground/inside/mountain,
-/area/f13/caves)
 "cbu" = (
 /obj/item/trash/f13/cram_large,
 /turf/open/indestructible/ground/inside/mountain,
@@ -39081,7 +39029,7 @@
 "cnT" = (
 /obj/effect/mine/explosive,
 /turf/closed/mineral/random/low_chance,
-/area/f13/wasteland)
+/area/f13/caves)
 "coc" = (
 /obj/structure/chair/office/dark{
 	dir = 1
@@ -39183,7 +39131,7 @@
 	icon_state = "remains";
 	tag = "icon-remains"
 	},
-/obj/effect/spawner/lootdrop/f13/weapon/gun/tier3,
+/obj/effect/spawner/lootdrop/f13/weapon/gun/tier2,
 /turf/open/indestructible/ground/outside/desert,
 /area/f13/wasteland)
 "cox" = (
@@ -39733,7 +39681,7 @@
 /area/f13/wasteland)
 "dXP" = (
 /obj/structure/closet/crate/miningcar,
-/obj/effect/spawner/lootdrop/f13/weapon/gun/tier4,
+/obj/effect/spawner/lootdrop/f13/weapon/gun/tier3,
 /turf/open/indestructible/ground/inside/mountain,
 /area/f13/caves)
 "ekc" = (
@@ -39764,7 +39712,7 @@
 /turf/open/indestructible/ground/outside/dirt,
 /area/f13/village)
 "eyl" = (
-/obj/machinery/light/small,
+/obj/machinery/light/small/broken,
 /turf/open/floor/f13/wood,
 /area/f13/tunnel)
 "eAc" = (
@@ -39794,7 +39742,7 @@
 /turf/open/indestructible/ground/outside/dirt,
 /area/f13/village)
 "eIH" = (
-/obj/machinery/light/small{
+/obj/machinery/light/small/broken{
 	dir = 8
 	},
 /turf/open/floor/f13/wood,
@@ -39803,11 +39751,6 @@
 /obj/effect/spawner/lootdrop/f13/resourcespawner,
 /turf/open/floor/f13/wood,
 /area/f13/tunnel)
-"eOV" = (
-/obj/effect/spawner/lootdrop/f13/crafting,
-/obj/effect/decal/remains/human,
-/turf/open/indestructible/ground/inside/mountain,
-/area/f13/caves)
 "eTT" = (
 /mob/living/simple_animal/hostile/radroach,
 /turf/open/floor/f13/wood{
@@ -39829,11 +39772,6 @@
 	tag = "icon-verticalrightborderright3"
 	},
 /area/f13/wasteland)
-"fbO" = (
-/obj/effect/spawner/lootdrop/f13/armor/tier4,
-/obj/effect/decal/remains/human,
-/turf/open/indestructible/ground/inside/mountain,
-/area/f13/caves)
 "fbV" = (
 /obj/machinery/light/small{
 	dir = 8;
@@ -39997,11 +39935,6 @@
 	tag = "icon-dirtcorner (WEST)"
 	},
 /area/f13/wasteland)
-"gKE" = (
-/obj/structure/table/wood/settler,
-/obj/item/kitchen/knife/combat/survival,
-/turf/closed/mineral/random/low_chance,
-/area/f13/caves)
 "gWz" = (
 /obj/structure/simple_door/house,
 /obj/structure/barricade/wooden/planks/pregame,
@@ -40076,6 +40009,7 @@
 	icon_state = "gibbearcore";
 	tag = "icon-gibbearcore"
 	},
+/obj/machinery/mineral/mint,
 /turf/open/floor/f13/wood,
 /area/f13/tunnel)
 "ixM" = (
@@ -40097,6 +40031,7 @@
 /obj/structure/bed/mattress{
 	icon_state = "mattress1"
 	},
+/mob/living/simple_animal/hostile/ghoul,
 /turf/open/indestructible/ground/outside/dirt,
 /area/f13/village)
 "iYy" = (
@@ -40110,13 +40045,9 @@
 /obj/effect/landmark/start/f13/villager,
 /turf/open/indestructible/ground/outside/dirt,
 /area/f13/village)
-"jjW" = (
-/obj/effect/spawner/lootdrop/f13/cash_ncr_high,
-/obj/effect/decal/remains/human,
-/turf/open/indestructible/ground/inside/mountain,
-/area/f13/caves)
 "jkN" = (
 /obj/effect/landmark/start/f13/shaman,
+/mob/living/simple_animal/hostile/ghoul,
 /turf/open/indestructible/ground/outside/dirt,
 /area/f13/wasteland)
 "jla" = (
@@ -40200,11 +40131,6 @@
 /obj/structure/fermenting_barrel,
 /turf/open/indestructible/ground/outside/dirt,
 /area/f13/village)
-"kmN" = (
-/obj/effect/spawner/lootdrop/f13/armor/tier3,
-/obj/effect/decal/remains/human,
-/turf/open/indestructible/ground/inside/mountain,
-/area/f13/caves)
 "kpC" = (
 /obj/effect/decal/remains/human,
 /turf/open/indestructible/ground/outside/road{
@@ -40239,11 +40165,6 @@
 /obj/effect/spawner/lootdrop/f13/traitbooks,
 /turf/open/floor/f13/wood,
 /area/f13/tunnel)
-"lkO" = (
-/obj/structure/table/wood/settler,
-/obj/item/chair,
-/turf/closed/mineral/random/low_chance,
-/area/f13/caves)
 "lmA" = (
 /obj/structure/table/wood/settler,
 /obj/item/kitchen/knife,
@@ -40394,11 +40315,6 @@
 	tag = "icon-horizontaltopbordertop2right"
 	},
 /area/f13/wasteland)
-"pfb" = (
-/obj/effect/spawner/lootdrop/f13/armor/tier1,
-/obj/effect/decal/remains/human,
-/turf/open/indestructible/ground/inside/mountain,
-/area/f13/caves)
 "pgE" = (
 /obj/machinery/light/lampost{
 	dir = 1;
@@ -40409,10 +40325,6 @@
 	tag = "icon-verticalrightborderright1"
 	},
 /area/f13/wasteland)
-"phS" = (
-/obj/effect/spawner/lootdrop/f13/cash_ncr_high,
-/turf/open/indestructible/ground/inside/mountain,
-/area/f13/caves)
 "plK" = (
 /obj/effect/decal/cleanable/blood/old{
 	icon_state = "gibbearcore";
@@ -40451,11 +40363,6 @@
 "pGL" = (
 /turf/open/floor/f13/wood,
 /area/f13/tunnel)
-"pHh" = (
-/obj/structure/table/wood/settler,
-/obj/item/chair/stool,
-/turf/closed/mineral/random/low_chance,
-/area/f13/caves)
 "pNB" = (
 /obj/effect/spawner/lootdrop/f13/armor/tier1,
 /turf/open/indestructible/ground/outside/desert,
@@ -40515,11 +40422,6 @@
 	tag = "icon-horizontaltopbordertop0"
 	},
 /area/f13/wasteland)
-"qSJ" = (
-/obj/structure/table/wood/settler,
-/obj/item/kitchen/knife,
-/turf/closed/mineral/random/low_chance,
-/area/f13/caves)
 "rnb" = (
 /obj/structure/closet/cabinet,
 /obj/effect/spawner/lootdrop/f13/weapon/melee/random,
@@ -40582,6 +40484,7 @@
 "szl" = (
 /obj/structure/closet/cabinet,
 /obj/effect/spawner/lootdrop/f13/armor/clothes,
+/obj/effect/spawner/lootdrop/f13/armor/random,
 /turf/open/floor/f13/wood{
 	icon_state = "housewood2";
 	tag = "icon-housewood2"
@@ -40655,15 +40558,15 @@
 	},
 /area/f13/village)
 "tJz" = (
-/obj/machinery/light/small{
-	dir = 1
-	},
 /obj/effect/decal/cleanable/blood/old{
 	icon_state = "gib6-old";
 	pixel_x = 8;
 	tag = "icon-gib6-old"
 	},
 /obj/effect/decal/remains/human,
+/obj/machinery/light/small/broken{
+	dir = 1
+	},
 /turf/open/floor/f13/wood,
 /area/f13/tunnel)
 "tMq" = (
@@ -40710,7 +40613,7 @@
 /area/f13/wasteland)
 "uGD" = (
 /obj/structure/closet/crate/miningcar,
-/obj/effect/spawner/lootdrop/f13/armor/tier4,
+/obj/effect/spawner/lootdrop/f13/armor/random_high,
 /turf/open/floor/f13/wood,
 /area/f13/tunnel)
 "uIa" = (
@@ -40824,12 +40727,12 @@
 /turf/closed/mineral/random/low_chance,
 /area/f13/caves)
 "vOI" = (
-/obj/machinery/light/small,
 /obj/effect/decal/cleanable/blood/old{
 	icon_state = "gib2-old";
 	tag = "icon-gib2-old"
 	},
 /obj/item/pickaxe,
+/obj/machinery/light/small/broken,
 /turf/open/floor/f13/wood,
 /area/f13/tunnel)
 "wce" = (
@@ -40858,12 +40761,6 @@
 	},
 /turf/open/indestructible/ground/outside/dirt,
 /area/f13/village)
-"wGH" = (
-/obj/machinery/door/airlock/grunge/abandoned{
-	locked = 1
-	},
-/turf/open/indestructible/ground/inside/mountain,
-/area/f13/caves)
 "wIv" = (
 /obj/effect/decal/cleanable/blood/tracks{
 	dir = 4
@@ -40903,11 +40800,6 @@
 	icon_state = "mattress3"
 	},
 /obj/effect/decal/cleanable/blood,
-/turf/open/indestructible/ground/inside/mountain,
-/area/f13/caves)
-"xFi" = (
-/obj/effect/spawner/lootdrop/f13/cash_random_high,
-/obj/effect/decal/remains/human,
 /turf/open/indestructible/ground/inside/mountain,
 /area/f13/caves)
 "xGK" = (
@@ -43417,7 +43309,7 @@ aae
 aae
 aae
 aae
-bbW
+aae
 aae
 aae
 aae
@@ -47469,7 +47361,7 @@ bsj
 ads
 aHF
 eHM
-aJf
+bbW
 aIw
 aIw
 aIw
@@ -47979,7 +47871,7 @@ aHF
 ach
 acv
 acv
-acv
+aVu
 ads
 aHF
 feF
@@ -48243,7 +48135,7 @@ aHF
 aKC
 aKC
 aKC
-aKC
+aLI
 aKC
 aHF
 aHF
@@ -49777,7 +49669,7 @@ aat
 aHF
 jJI
 aKC
-aKC
+aLI
 aKC
 ajW
 fMj
@@ -50291,7 +50183,7 @@ aat
 aHF
 esz
 aKC
-aKC
+aLI
 aKC
 aII
 fMj
@@ -51393,13 +51285,13 @@ aat
 aat
 aat
 aat
-ahJ
-ahJ
-ahJ
-ahJ
-ahJ
-ahJ
-ahJ
+aae
+aae
+aae
+aat
+aat
+aat
+aat
 bgk
 aat
 awU
@@ -51652,11 +51544,11 @@ ady
 ady
 ady
 bcT
-ahJ
-ahJ
-ahJ
-ahJ
-ahJ
+aae
+aae
+aae
+aae
+aat
 aat
 aat
 bgo
@@ -51908,12 +51800,12 @@ aat
 aat
 aat
 aat
-ahJ
-ahJ
-ahJ
-ahJ
-ahJ
-ahJ
+aae
+aae
+aae
+aae
+aae
+aae
 aat
 aat
 agl
@@ -52165,12 +52057,12 @@ anQ
 aat
 aat
 cnT
-ahJ
-ahJ
-ahJ
-ahJ
-ahJ
-ahJ
+aae
+aae
+aae
+aae
+aae
+aae
 aat
 aat
 agl
@@ -52421,13 +52313,13 @@ bbC
 aiu
 bcS
 aat
-ahJ
-ahJ
-ahJ
-ahJ
 aae
 aae
-ahJ
+aae
+aae
+aae
+aae
+aae
 aat
 aat
 agl
@@ -52679,8 +52571,8 @@ aoI
 aat
 aat
 aat
-ahJ
-ahJ
+aae
+aae
 aae
 aae
 aae
@@ -56089,7 +55981,7 @@ aae
 aae
 aae
 aae
-qSJ
+aae
 aae
 aae
 aaa
@@ -56346,7 +56238,7 @@ aae
 aae
 aae
 aae
-gKE
+aae
 aae
 aae
 aaa
@@ -56601,8 +56493,8 @@ aae
 aae
 aae
 aae
-pHh
-lkO
+aae
+aae
 aae
 aae
 aae
@@ -59023,7 +58915,7 @@ aat
 aat
 aHF
 azE
-vcy
+aoj
 aAf
 azE
 azE
@@ -63599,7 +63491,7 @@ anV
 afz
 alc
 aoY
-alc
+biD
 afz
 aoD
 aoD
@@ -76732,7 +76624,7 @@ aeV
 acB
 acm
 azh
-acb
+anO
 acb
 aBo
 azh
@@ -82705,7 +82597,7 @@ acb
 abZ
 aCN
 acb
-aVu
+abL
 acb
 aCN
 abJ
@@ -90676,7 +90568,7 @@ aVw
 aVP
 aVw
 aVZ
-aVV
+bnS
 aVV
 aWl
 aVw
@@ -90767,7 +90659,7 @@ aae
 aae
 aae
 aae
-aHE
+aae
 aae
 aae
 aae
@@ -108340,7 +108232,7 @@ bFx
 aah
 aah
 boU
-boU
+aaB
 aae
 aae
 aae
@@ -108597,8 +108489,8 @@ bFx
 aah
 aah
 boU
-boU
-boU
+aaB
+aaB
 aae
 aae
 aae
@@ -108619,12 +108511,12 @@ aae
 aae
 aae
 aae
-bKe
-boU
-boU
+bNC
+aaB
+aaB
 aae
 aae
-bpQ
+abV
 aae
 aae
 aae
@@ -108854,17 +108746,17 @@ bFx
 aah
 aah
 boU
-boU
-boU
-boU
-boU
-boU
-boU
-boU
-boU
-boU
-boU
-boU
+aaB
+aaB
+aaB
+aaB
+aaB
+aaB
+aaB
+aaB
+aaB
+aaB
+aaB
 aae
 aae
 aae
@@ -108874,22 +108766,22 @@ aae
 aae
 aae
 aae
-boU
-boU
-boU
-boU
-boU
-boU
-boU
-boU
-boU
-bpO
+aaB
+aaB
+aaB
+aaB
+aaB
+aaB
+aaB
+aaB
+aaB
+aaY
 aae
 aae
 aae
 aae
-boU
-boU
+aaB
+aaB
 aae
 aae
 aae
@@ -108897,11 +108789,11 @@ aae
 aae
 aae
 aae
-boU
-boU
-boU
-boU
-bpQ
+aaB
+aaB
+aaB
+aaB
+abV
 aae
 aae
 aae
@@ -109111,55 +109003,55 @@ bFx
 bGZ
 aah
 boU
-boU
-boU
-boU
-boU
-boU
-boU
-boU
-boU
-boU
-boU
-boU
-boU
-boU
-boU
-boU
-boU
-boU
-boU
-boU
-boU
-boU
-boU
-boU
+aaB
+aaB
+aaB
+aaB
+aaB
+aaB
+aaB
+aaB
+aaB
+aaB
+aaB
+aaB
+aaB
+aaB
+aaB
+aaB
+aaB
+aaB
+aaB
+aaB
+aaB
+aaB
+aaB
 aae
-boU
-boU
-boU
-boU
-boU
-boU
-boU
-bpQ
+aaB
+aaB
+aaB
+aaB
+aaB
+aaB
+aaB
+abV
 aae
-boU
-boU
-boU
-boU
-boU
-boU
+aaB
+aaB
+aaB
+aaB
+aaB
+aaB
 aae
 aae
-boU
-boU
-boU
-boU
-boU
-boU
-boU
-boU
+aaB
+aaB
+aaB
+aaB
+aaB
+aaB
+aaB
+aaB
 aae
 aae
 aae
@@ -109368,9 +109260,9 @@ bFx
 aah
 aah
 boU
-boU
-boU
-boU
+aaB
+aaB
+aaB
 aae
 aae
 aae
@@ -109378,18 +109270,18 @@ aae
 aae
 aae
 aae
-boU
-bpO
-boU
-boU
-boU
-boU
-boU
-boU
-boU
-boU
-boU
-bpQ
+aaB
+aaY
+aaB
+aaB
+aaB
+aaB
+aaB
+aaB
+aaB
+aaB
+aaB
+abV
 aae
 aae
 aae
@@ -109397,27 +109289,27 @@ aae
 aae
 aae
 aae
-boU
-boU
-boU
-boU
-boU
-boU
+aaB
+aaB
+aaB
+aaB
+aaB
+aaB
 aae
 aae
-boU
-boU
-boU
-boU
-boU
-boU
-boU
+aaB
+aaB
+aaB
+aaB
+aaB
+aaB
+aaB
 aae
 aae
-boU
-boU
-boU
-boU
+aaB
+aaB
+aaB
+aaB
 aae
 aae
 aae
@@ -109625,8 +109517,8 @@ bFx
 bjg
 aah
 bjY
-bjY
-bLg
+bZm
+bLL
 aae
 aae
 aae
@@ -109655,28 +109547,28 @@ aae
 aae
 aae
 aae
-boU
-boU
-boU
-boU
+aaB
+aaB
+aaB
+aaB
 aae
 aae
 aae
 aae
-boU
-boU
-boU
-boU
-boU
+aaB
+aaB
+aaB
+aaB
+aaB
 aae
 aae
 aae
 aae
 aae
-boU
-boU
-boU
-boU
+aaB
+aaB
+aaB
+aaB
 aae
 aae
 aae
@@ -109922,7 +109814,7 @@ aae
 aae
 aae
 aae
-bpQ
+abV
 aae
 aae
 aae
@@ -109931,10 +109823,10 @@ aae
 aae
 aae
 aae
-boU
-boU
-boU
-boU
+aaB
+aaB
+aaB
+aaB
 aae
 aae
 aae
@@ -110190,9 +110082,9 @@ aae
 aae
 aae
 aae
-boU
-boU
-boU
+aaB
+aaB
+aaB
 aae
 aae
 bOy
@@ -110448,9 +110340,9 @@ aae
 aae
 aae
 aae
-boU
-boU
-bpQ
+aaB
+aaB
+abV
 aae
 bOy
 bOy
@@ -110705,9 +110597,9 @@ aae
 aae
 aae
 aae
-boU
-boU
-boU
+aaB
+aaB
+aaB
 aae
 aae
 bOy
@@ -110963,8 +110855,8 @@ aae
 aae
 aae
 aae
-boU
-boU
+aaB
+aaB
 aae
 aae
 bOy
@@ -111220,9 +111112,9 @@ aae
 aae
 aae
 aae
-boU
-boU
-boU
+aaB
+aaB
+aaB
 aae
 bOy
 bOy
@@ -111478,9 +111370,9 @@ aae
 aae
 aae
 aae
-boU
-boU
-boU
+aaB
+aaB
+aaB
 aae
 bOy
 bOC
@@ -111736,8 +111628,8 @@ aae
 aae
 aae
 aae
-boU
-boU
+aaB
+aaB
 aae
 bOy
 bOy
@@ -111994,8 +111886,8 @@ aae
 aae
 aae
 aae
-boU
-boU
+aaB
+aaB
 aae
 bOy
 bOy
@@ -112251,15 +112143,15 @@ bHS
 bHS
 aae
 aae
-boU
-boU
-boU
+aaB
+aaB
+aaB
 aae
 aae
 aae
-boU
-bOU
-boU
+aaB
+bMu
+aaB
 aae
 aae
 aae
@@ -112509,13 +112401,13 @@ bHS
 aae
 aae
 aae
-boU
-boU
-boU
+aaB
+aaB
+aaB
 aae
 aae
-boU
-bpr
+aaB
+ali
 aae
 aae
 aae
@@ -112766,14 +112658,14 @@ bHS
 aae
 aae
 aae
-bpQ
-boU
-boU
-boU
-boU
-boU
-boU
-boU
+abV
+aaB
+aaB
+aaB
+aaB
+aaB
+aaB
+aaB
 aae
 bPk
 aae
@@ -113025,11 +112917,11 @@ aae
 aae
 aae
 aae
-boU
-boU
-boU
-boU
-bpr
+aaB
+aaB
+aaB
+aaB
+ali
 aae
 aae
 bPk
@@ -113284,9 +113176,9 @@ aae
 aae
 aae
 aae
-boU
-bxH
-boU
+aaB
+arv
+aaB
 aae
 aae
 bPk
@@ -113541,8 +113433,8 @@ aae
 aae
 aae
 aae
-boU
-boU
+aaB
+aaB
 aae
 aae
 aae
@@ -113798,8 +113690,8 @@ aae
 aae
 aae
 aae
-boU
-boU
+aaB
+aaB
 aae
 aae
 aae
@@ -113968,27 +113860,27 @@ aae
 aae
 aae
 aae
-aae
-aae
-aae
-aae
-aae
-aae
-aae
-aae
-aae
-aae
-aae
-aae
-aae
-aae
-aae
-aae
-aae
-aae
-aae
-aae
-aae
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
 aae
 aae
 aae
@@ -114054,8 +113946,8 @@ aae
 aae
 aae
 aae
-bpQ
-bxH
+abV
+arv
 aae
 aae
 aae
@@ -114225,6 +114117,7 @@ aae
 aae
 aae
 aae
+aaa
 aae
 aae
 aae
@@ -114244,8 +114137,7 @@ aae
 aae
 aae
 aae
-aae
-aae
+aaa
 aae
 aae
 aae
@@ -114311,8 +114203,8 @@ aae
 aae
 aae
 aae
-boU
-boU
+aaB
+aaB
 aae
 aae
 aae
@@ -114482,6 +114374,7 @@ aae
 aae
 aae
 aae
+aaa
 aae
 aae
 aae
@@ -114489,20 +114382,19 @@ aae
 aae
 aae
 aae
+bKO
+bKO
+bKO
+bKO
+bKO
+bKO
 aae
 aae
 aae
 aae
 aae
 aae
-aae
-aae
-aae
-aae
-aae
-aae
-aae
-aae
+aaa
 aae
 aae
 aae
@@ -114568,8 +114460,8 @@ aae
 aae
 aae
 aae
-boU
-boU
+aaB
+aaB
 aae
 aae
 aae
@@ -114739,6 +114631,7 @@ aae
 aae
 aae
 aae
+aaa
 aae
 aae
 aae
@@ -114746,20 +114639,19 @@ aae
 aae
 aae
 aae
+bKO
+bKO
+bKO
+bKO
+bKO
+bKO
 aae
 aae
 aae
 aae
 aae
 aae
-aae
-aae
-aae
-aae
-aae
-aae
-aae
-aae
+aaa
 aae
 aae
 aae
@@ -114825,9 +114717,9 @@ aae
 aae
 aae
 aae
-boU
-bpr
-boU
+aaB
+ali
+aaB
 aae
 aae
 aae
@@ -114996,6 +114888,7 @@ aae
 aae
 aae
 aae
+aaa
 aae
 aae
 aae
@@ -115003,10 +114896,9 @@ aae
 aae
 aae
 aae
-aae
-aae
-aae
-aae
+bKO
+bKO
+bKO
 aaB
 aaB
 aaB
@@ -115016,7 +114908,7 @@ aae
 aae
 aae
 aae
-aae
+aaa
 aae
 aae
 aae
@@ -115042,14 +114934,14 @@ aae
 aae
 aae
 bHS
-boU
-boU
-boU
-boU
-boU
-boU
-boU
-boU
+aaB
+aaB
+aaB
+aaB
+aaB
+aaB
+aaB
+aaB
 aaA
 aae
 aae
@@ -115083,14 +114975,14 @@ aae
 aae
 aae
 aae
-boU
-boU
+aaB
+aaB
 aae
 aae
 aae
 bPk
-boU
-boU
+aaB
+aaB
 aae
 aae
 aae
@@ -115253,7 +115145,7 @@ aae
 aae
 aae
 aae
-aae
+aaa
 aae
 aae
 aae
@@ -115273,7 +115165,7 @@ aae
 aae
 aae
 aae
-aae
+aaa
 aae
 aae
 aae
@@ -115299,14 +115191,14 @@ aae
 aae
 aae
 aae
-bpQ
-boU
-bpO
-boU
-boU
-boU
-boU
-bpQ
+abV
+aaB
+aaY
+aaB
+aaB
+aaB
+aaB
+abV
 aae
 aae
 aae
@@ -115340,14 +115232,14 @@ aae
 aae
 aae
 aae
-boU
-boU
+aaB
+aaB
 aae
-bpQ
-bpQ
+abV
+abV
 bPl
 bPp
-boU
+aaB
 aae
 aae
 aae
@@ -115510,13 +115402,13 @@ aae
 aae
 aae
 aae
+aaa
 aae
 aae
 aae
-aae
-aae
-aae
-aae
+bKO
+bKO
+bKO
 aaB
 pGL
 eIH
@@ -115530,7 +115422,7 @@ aae
 aae
 aae
 aae
-aae
+aaa
 aae
 aae
 aae
@@ -115557,12 +115449,12 @@ aae
 aae
 aae
 aaA
-boU
-boU
-boU
-boU
-boU
-boU
+aaB
+aaB
+aaB
+aaB
+aaB
+aaB
 aaA
 aae
 aae
@@ -115596,13 +115488,13 @@ aae
 aae
 aae
 aae
-bpQ
-boU
-boU
+abV
+aaB
+aaB
 aae
-bpr
-bpQ
-boU
+ali
+abV
+aaB
 bPq
 aae
 aae
@@ -115767,27 +115659,27 @@ aae
 aae
 aae
 aae
+aaa
 aae
 aae
 aae
-aae
-aae
-aae
-aae
+bKO
+bKO
+bKO
 aaB
-pGL
+bLg
 iwx
 gyy
 cUo
 uGD
 myo
-pGL
+bLg
 mWq
 aaB
 aae
 aae
 aae
-aae
+aaa
 aae
 aae
 aae
@@ -115814,12 +115706,12 @@ aae
 aae
 aae
 aae
-bpQ
-boU
-boU
-boU
-boU
-bpQ
+abV
+aaB
+aaB
+aaB
+aaB
+abV
 aae
 aae
 aae
@@ -115835,8 +115727,8 @@ aae
 aae
 aae
 aae
-boU
-boU
+aaB
+aaB
 aae
 aae
 aae
@@ -115853,14 +115745,14 @@ aae
 aae
 aae
 aae
-boU
-boU
+aaB
+aaB
 aae
-boU
-boU
-bpQ
-bpQ
-bpQ
+aaB
+aaB
+abV
+abV
+abV
 aae
 aae
 aae
@@ -116024,12 +115916,12 @@ aae
 aae
 aae
 aae
+aaa
 aae
 aae
 aae
-aae
-aae
-aae
+bKO
+bKO
 aaB
 aaB
 aaB
@@ -116044,7 +115936,7 @@ cUo
 aae
 aae
 aae
-aae
+aaa
 aae
 aae
 aae
@@ -116072,10 +115964,10 @@ aae
 aae
 aae
 aae
-bpQ
-boU
-boU
-bpQ
+abV
+aaB
+aaB
+abV
 aae
 aae
 aae
@@ -116091,10 +115983,10 @@ aae
 aae
 aae
 aae
-boU
-boU
-boU
-boU
+aaB
+aaB
+aaB
+aaB
 aae
 aae
 aae
@@ -116110,14 +116002,14 @@ aae
 aae
 aae
 aae
-boU
-boU
-boU
-bxH
-boU
-boU
-boU
-bpr
+aaB
+aaB
+aaB
+arv
+aaB
+aaB
+aaB
+ali
 aae
 aae
 aae
@@ -116281,12 +116173,12 @@ aae
 aae
 aae
 aae
+aaa
 aae
 aae
 aae
-aae
-aae
-aae
+bKO
+bKO
 aaB
 sxe
 aaB
@@ -116301,7 +116193,7 @@ cUo
 aae
 aae
 aae
-aae
+aaa
 aae
 aae
 aae
@@ -116330,8 +116222,8 @@ aae
 aae
 aae
 aaA
-boU
-boU
+aaB
+aaB
 aaA
 aae
 aae
@@ -116343,15 +116235,15 @@ aae
 aae
 aae
 aae
-boU
-bpQ
+aaB
+abV
 aae
 aae
-boU
-boU
+aaB
+aaB
 bNy
-boU
-boU
+aaB
+aaB
 aae
 aae
 aae
@@ -116366,15 +116258,15 @@ aae
 aae
 aae
 aae
-boU
-boU
-boU
-bpr
-boU
-bxH
-boU
-bxH
-boU
+aaB
+aaB
+aaB
+ali
+aaB
+arv
+aaB
+arv
+aaB
 aae
 aae
 aae
@@ -116538,12 +116430,12 @@ aae
 aae
 aae
 aae
+aaa
 aae
 aae
 aae
-aae
-aae
-aae
+bKO
+bKO
 aaB
 aaB
 aaB
@@ -116555,10 +116447,10 @@ nfU
 pGL
 wZd
 cUo
-aae
-aae
-aae
-aae
+aaa
+aaa
+aaa
+aaa
 aae
 aae
 aae
@@ -116587,8 +116479,8 @@ aae
 aae
 aae
 aae
-bpQ
-bpQ
+abV
+abV
 aae
 aae
 aae
@@ -116598,16 +116490,16 @@ aae
 aae
 aae
 bLG
-boU
-boU
-boU
-bpQ
-bMU
-bpQ
-boU
-boU
-bKA
-boU
+aaB
+aaB
+aaB
+abV
+ceP
+abV
+aaB
+aaB
+bLH
+aaB
 aae
 aae
 aae
@@ -116620,17 +116512,17 @@ aae
 aae
 aae
 aae
-boU
-boU
-boU
-boU
-boU
-boU
-boU
-boU
-boU
-bpr
-boU
+aaB
+aaB
+aaB
+aaB
+aaB
+aaB
+aaB
+aaB
+aaB
+ali
+aaB
 aae
 aae
 aae
@@ -116795,15 +116687,15 @@ aae
 aae
 aae
 aae
+aaa
 aae
 aae
 aae
-aae
-aae
-aae
+bKO
+bKO
 aaB
 cUo
-aLI
+pGL
 myo
 pGL
 wZd
@@ -116844,9 +116736,9 @@ aae
 aae
 aae
 aae
-bpQ
-boU
-boU
+abV
+aaB
+aaB
 aae
 aae
 aae
@@ -116854,17 +116746,17 @@ aae
 aae
 aae
 aae
-boU
-boU
-boU
-boU
-bpQ
+aaB
+aaB
+aaB
+aaB
+abV
 bMV
-bpQ
-boU
-boU
-boU
-boU
+abV
+aaB
+aaB
+aaB
+aaB
 aae
 aae
 aae
@@ -116875,18 +116767,18 @@ aae
 aae
 aae
 aae
-boU
-bxH
-boU
-bxH
-boU
-boU
-boU
-boU
-boU
-boU
-boU
-boU
+aaB
+arv
+aaB
+arv
+aaB
+aaB
+aaB
+aaB
+aaB
+aaB
+aaB
+aaB
 aae
 aae
 aae
@@ -117052,7 +116944,7 @@ aae
 aae
 aae
 aae
-aae
+aaa
 aae
 aae
 aae
@@ -117102,28 +116994,26 @@ aae
 aae
 aae
 aae
-bpr
-boU
-bpQ
+ali
+aaB
+abV
 aae
 aae
 aae
 aae
 aae
 aae
-bLH
-boU
-bMi
-boU
-bpQ
-bpQ
+xdG
+aaB
+qea
+aaB
+abV
+abV
 aae
-boU
-boU
-boU
-boU
-aae
-aae
+aaB
+aaB
+aaB
+aaB
 aae
 aae
 aae
@@ -117131,18 +117021,20 @@ aae
 aae
 aae
 aae
-bpQ
-boU
-boU
-boU
-boU
-boU
-boU
-boU
-bKe
 aae
 aae
-bpQ
+abV
+aaB
+aaB
+aaB
+aaB
+aaB
+aaB
+aaB
+bNC
+aae
+aae
+abV
 aae
 aae
 aae
@@ -117309,7 +117201,7 @@ aae
 aae
 aae
 aae
-aae
+aaa
 aae
 aae
 aae
@@ -117359,27 +117251,27 @@ aae
 aae
 aae
 aae
-boU
-bKO
-boU
+aaB
+bNB
+aaB
 aae
 aae
 aae
 aae
 aae
 aae
-boU
+aaB
 bLX
-bMj
-boU
-boU
-boU
+aJG
+aaB
+aaB
+aaB
 aae
 aae
 aae
-boU
-boU
-boU
+aaB
+aaB
+aaB
 aae
 aae
 aae
@@ -117387,13 +117279,13 @@ aae
 aae
 aae
 aae
-boU
-bpQ
-bpQ
-boU
-bxH
-boU
-boU
+aaB
+abV
+abV
+aaB
+arv
+aaB
+aaB
 aae
 aae
 aae
@@ -117566,13 +117458,13 @@ aae
 aae
 aae
 aae
-aae
-aae
-aae
-aae
-aae
-aae
-aae
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
 cUo
 cUo
 cUo
@@ -117616,38 +117508,38 @@ aae
 aae
 aae
 aae
-bpQ
-boU
-bpr
+abV
+aaB
+ali
 aae
 aae
 aae
 aae
 aae
 aae
-bpO
-boU
-boU
-boU
-boU
-boU
+aaY
+aaB
+aaB
+aaB
+aaB
+aaB
 aae
 aae
 aae
 aae
-boU
-boU
-boU
+aaB
+aaB
+aaB
 aae
 aae
 aae
 aae
-boU
-boU
-boU
-boU
-bpQ
-boU
+aaB
+aaB
+aaB
+aaB
+abV
+aaB
 aae
 aae
 aae
@@ -117873,9 +117765,9 @@ aae
 aae
 aae
 aae
-boU
-boU
-boU
+aaB
+aaB
+aaB
 aae
 aae
 aae
@@ -117883,26 +117775,26 @@ aae
 aae
 aae
 bLI
-boU
-boU
-boU
-boU
-boU
+aaB
+aaB
+aaB
+aaB
+aaB
 aae
 aae
 aae
 aae
 aae
-boU
-bNH
-boU
-boU
-boU
-boU
-boU
-boU
-bNH
-boU
+aaB
+bNz
+aaB
+aaB
+aaB
+aaB
+aaB
+aaB
+bNz
+aaB
 aae
 aae
 aae
@@ -118131,35 +118023,35 @@ aae
 aae
 aae
 aae
-bpQ
-bpQ
+abV
+abV
 aae
 aae
 aae
 aae
 aae
 aae
-boU
-bGl
-boU
+aaB
+aUl
+aaB
 bMq
-bpO
-boU
+aaY
+aaB
 aae
 aae
 aae
 aae
 aae
-boU
-boU
-boU
-boU
-boU
-bNH
-boU
-boU
-boU
-boU
+aaB
+aaB
+aaB
+aaB
+aaB
+bNz
+aaB
+aaB
+aaB
+aaB
 aae
 aae
 aae
@@ -118388,15 +118280,15 @@ aae
 aae
 aae
 aae
-boU
-boU
-boU
+aaB
+aaB
+aaB
 aae
 aae
 aae
 aae
 aae
-bpO
+aaY
 aae
 aae
 aae
@@ -118407,16 +118299,16 @@ aae
 aae
 aae
 aae
-bNE
-boU
-boU
-boU
-boU
-boU
-boU
-boU
-boU
-boU
+anF
+aaB
+aaB
+aaB
+aaB
+aaB
+aaB
+aaB
+aaB
+aaB
 aae
 aae
 aae
@@ -118645,10 +118537,10 @@ aae
 aae
 aae
 aae
-boU
-boU
-boU
-bpQ
+aaB
+aaB
+aaB
+abV
 aae
 aae
 aae
@@ -118671,8 +118563,8 @@ bNQ
 ajX
 ajX
 abV
-bpQ
-boU
+abV
+aaB
 aae
 aae
 aae
@@ -118903,9 +118795,9 @@ aae
 aae
 aae
 aae
-boU
+aaB
 bLb
-boU
+aaB
 bKP
 bKP
 bKP
@@ -118928,9 +118820,9 @@ aGd
 bNT
 aae
 aae
-bpQ
-boU
-boU
+abV
+aaB
+aaB
 aae
 aae
 aae
@@ -119160,9 +119052,9 @@ aae
 aae
 aae
 aae
-bpQ
-boU
-bLg
+abV
+aaB
+bLL
 bKS
 bKP
 bKP
@@ -119185,9 +119077,9 @@ bNR
 bNU
 ajX
 aae
-bpQ
-bpQ
-bpQ
+abV
+abV
+abV
 aae
 aae
 aae
@@ -119418,8 +119310,8 @@ aae
 aae
 aae
 aae
-boU
-boU
+aaB
+aaB
 bKP
 bKP
 bKP
@@ -119442,9 +119334,9 @@ bNO
 aGd
 ajX
 aae
-boU
-boU
-bpQ
+aaB
+aaB
+abV
 aae
 aae
 aae
@@ -119676,7 +119568,7 @@ aae
 aae
 aae
 aae
-boU
+aaB
 bKP
 bKP
 bLp
@@ -119699,9 +119591,9 @@ bNS
 bNV
 ajX
 aae
-boU
-boU
-boU
+aaB
+aaB
+aaB
 aae
 aae
 aae
@@ -119933,7 +119825,7 @@ aae
 aae
 aae
 aae
-boU
+aaB
 bKP
 bKP
 bKP
@@ -119956,9 +119848,9 @@ ajX
 ajX
 ajX
 aae
-boU
-boU
-boU
+aaB
+aaB
+aaB
 aae
 aae
 aae
@@ -120213,8 +120105,8 @@ aae
 aae
 aaB
 aaB
-boU
-bFF
+aaB
+aae
 aae
 aae
 aae
@@ -120470,8 +120362,8 @@ aae
 aaB
 aaB
 aaB
-bFF
-bFF
+aae
+aae
 aae
 aae
 aae
@@ -120727,8 +120619,8 @@ aaB
 aaB
 aaB
 aae
-bFF
-bOq
+aae
+aae
 aae
 aae
 aae
@@ -120983,9 +120875,9 @@ abV
 abV
 aaB
 aae
-bOd
-bFF
-bFF
+aae
+aae
+aae
 aae
 aae
 aae
@@ -121240,9 +121132,9 @@ abV
 abV
 aae
 aae
-bFF
-bFF
-bFF
+aae
+aae
+aae
 aae
 aae
 aae
@@ -121496,9 +121388,9 @@ aaB
 abV
 abV
 aae
-bFF
-bFF
-bFF
+aae
+aae
+aae
 aae
 aae
 aae
@@ -121752,10 +121644,10 @@ aaB
 aaB
 aae
 aae
-bFF
-bFF
-bFF
-bFF
+aae
+aae
+aae
+aae
 aae
 aae
 aae
@@ -122009,9 +121901,9 @@ aaB
 aaB
 aae
 aae
-bFF
-bFF
-bFF
+aae
+aae
+aae
 aae
 aae
 aae
@@ -122266,9 +122158,9 @@ aaB
 aaB
 aae
 aae
-bFF
-bFF
-bOd
+aae
+aae
+aae
 aae
 aae
 aae
@@ -122523,8 +122415,8 @@ bNC
 aaB
 aaB
 aae
-bFF
-bFF
+aae
+aae
 aae
 aae
 aae
@@ -122780,8 +122672,8 @@ aaB
 aaB
 abV
 aae
-bFF
-bFF
+aae
+aae
 aae
 aae
 aae
@@ -123037,8 +122929,8 @@ aaB
 aaB
 aaB
 aae
-bFF
-bFF
+aae
+aae
 aae
 aae
 aae
@@ -123213,8 +123105,8 @@ aae
 aae
 aae
 aae
-aaB
-aaB
+abV
+abV
 aae
 aae
 aae
@@ -123294,8 +123186,8 @@ aaB
 aaB
 aae
 aae
-bFF
-bFF
+aae
+aae
 aae
 aae
 aae
@@ -123551,9 +123443,9 @@ aae
 aaB
 aae
 aae
-bNW
-bFF
-bOd
+aae
+aae
+aae
 aae
 aae
 aae
@@ -123808,9 +123700,9 @@ aae
 bNK
 aae
 aae
-bFF
-bOd
-bOd
+aae
+aae
+aae
 aae
 aae
 aae
@@ -124066,9 +123958,9 @@ aaB
 aae
 aae
 aae
-bOd
-bFF
-bFF
+aae
+aae
+aae
 aae
 aae
 aae
@@ -124323,9 +124215,9 @@ aaB
 aae
 aae
 aae
-bFF
-bFF
-bFF
+aae
+aae
+aae
 aae
 aae
 aae
@@ -124581,8 +124473,8 @@ aaB
 aae
 bNB
 aae
-bFF
-bOq
+aae
+aae
 aae
 aae
 aae
@@ -124838,9 +124730,9 @@ aaB
 aaB
 aaB
 aae
-bFF
-bFF
-bFF
+aae
+aae
+aae
 aae
 aae
 aae
@@ -124879,7 +124771,7 @@ aae
 aaa
 aae
 aae
-aaB
+xdG
 aae
 aae
 aae
@@ -124996,7 +124888,7 @@ bBd
 aaB
 aae
 aae
-aae
+ahz
 aae
 aae
 aae
@@ -125096,8 +124988,8 @@ aaB
 aae
 aae
 aae
-bFF
-bFF
+aae
+aae
 aae
 aae
 aae
@@ -125252,9 +125144,9 @@ aaB
 aaB
 aaB
 aaB
-tMq
+vyX
 aaB
-aaB
+abV
 aae
 aae
 aae
@@ -125353,8 +125245,8 @@ aae
 aae
 aae
 aae
-bFF
-bFF
+aae
+aae
 aae
 aae
 aae
@@ -125511,7 +125403,7 @@ aaB
 aaB
 aaB
 aaB
-aaB
+abV
 aae
 aae
 aae
@@ -125609,9 +125501,9 @@ bNz
 aae
 aae
 aae
-bFF
-bFF
-bFF
+aae
+aae
+aae
 aae
 aae
 aae
@@ -125768,12 +125660,12 @@ aaB
 aaB
 aaB
 aaB
-aaB
+ahz
 aae
 aae
 aae
 aae
-aae
+ahz
 aae
 aae
 uRT
@@ -125865,10 +125757,10 @@ bNz
 aaB
 aae
 aae
-bOd
-bFF
-bFF
-bFF
+aae
+aae
+aae
+aae
 aae
 aae
 aae
@@ -126122,10 +126014,10 @@ aaB
 aaB
 aae
 aae
-bFF
-bFF
-bFF
-bOd
+aae
+aae
+aae
+aae
 aae
 aae
 aae
@@ -126379,9 +126271,9 @@ aae
 aae
 aae
 aae
-bFF
-bFF
-bFF
+aae
+aae
+aae
 aae
 aae
 aae
@@ -126636,8 +126528,8 @@ aae
 aae
 aae
 aae
-bOd
-bOd
+aae
+aae
 aae
 aae
 aae
@@ -126893,8 +126785,8 @@ aae
 aae
 aae
 aae
-bOd
-bFF
+aae
+aae
 aae
 aae
 aae
@@ -127150,9 +127042,9 @@ aae
 aae
 aae
 aae
-bFF
-bFF
-bFF
+aae
+aae
+aae
 aae
 aae
 aae
@@ -127407,9 +127299,9 @@ aae
 aae
 aae
 aae
-bFF
-bFF
-bFF
+aae
+aae
+aae
 aae
 aae
 aae
@@ -127665,9 +127557,9 @@ aae
 aae
 aae
 aae
-bFF
-bFF
-bOd
+aae
+aae
+aae
 aae
 aae
 aae
@@ -127922,9 +127814,9 @@ aae
 aae
 aae
 aae
-bFF
-bOr
-bFF
+aae
+aae
+aae
 aae
 aae
 aae
@@ -128180,9 +128072,9 @@ aae
 aae
 aae
 aae
-bFF
-bFF
-bFF
+aae
+aae
+aae
 aae
 aae
 aae
@@ -128437,9 +128329,9 @@ aaB
 aae
 aae
 aae
-bFF
-bFF
-bFF
+aae
+aae
+aae
 aae
 aae
 aae
@@ -128694,9 +128586,9 @@ aaB
 aae
 aae
 aae
-bOd
-bFF
-bFF
+aae
+aae
+aae
 aae
 aae
 aae
@@ -128950,10 +128842,10 @@ aae
 aaB
 aae
 aae
-bFF
-bOd
-bOd
-bFF
+aae
+aae
+aae
+aae
 aae
 aae
 aae
@@ -129206,10 +129098,10 @@ aae
 aae
 aaB
 aaB
-boU
-bFF
-bFF
-bOd
+aaB
+aae
+aae
+aae
 aae
 aae
 aae
@@ -129463,9 +129355,9 @@ aae
 aae
 aaB
 aaB
-boU
-bFF
-bFF
+aaB
+aae
+aae
 aae
 aae
 aae
@@ -129720,8 +129612,8 @@ aae
 aae
 aae
 aae
-bNH
-boU
+bNz
+aaB
 aae
 aae
 aae
@@ -129976,9 +129868,9 @@ aae
 aae
 aae
 aae
-bpQ
-boU
-boU
+abV
+aaB
+aaB
 aae
 aae
 aae
@@ -130233,9 +130125,9 @@ aae
 aae
 aae
 aae
-boU
-boU
-boU
+aaB
+aaB
+aaB
 aae
 aae
 aae
@@ -137357,9 +137249,9 @@ aae
 aae
 aae
 aae
-fCw
-aaB
-aaB
+aae
+aae
+aae
 aae
 aae
 aae
@@ -137611,14 +137503,14 @@ aae
 aae
 aae
 aae
-aaB
-aaB
-fCw
-aaB
-aaB
-ccc
-aaB
-aaB
+aae
+aae
+aae
+aae
+aae
+aae
+aae
+aae
 aae
 aae
 aae
@@ -137868,14 +137760,14 @@ aae
 aae
 aae
 aae
-aaB
-aaB
-aaB
-aaB
-bQr
-aaB
-aaB
-fCw
+aae
+aae
+aae
+aae
+aae
+aae
+aae
+aae
 aae
 aae
 aae
@@ -138126,12 +138018,12 @@ aae
 aae
 aae
 aae
-fCw
-ccc
-aaB
-aaB
-fCw
-aaB
+aae
+aae
+aae
+aae
+aae
+aae
 aae
 aae
 aae
@@ -138383,11 +138275,11 @@ aae
 aae
 aae
 aae
-aaB
-bQr
-aaB
-aaB
-aaB
+aae
+aae
+aae
+aae
+aae
 aae
 aae
 aae
@@ -138641,9 +138533,9 @@ aae
 aae
 aae
 aae
-aaB
-fCw
-aaB
+aae
+aae
+aae
 aae
 aae
 aae
@@ -141454,7 +141346,7 @@ aae
 aaB
 aaB
 aaB
-oJa
+bKe
 aae
 aae
 aae
@@ -146281,7 +146173,7 @@ aaB
 aaB
 aae
 aae
-cbt
+fCw
 aae
 aae
 aae
@@ -147295,7 +147187,7 @@ aae
 aae
 bZl
 aaB
-cbt
+fCw
 aae
 aae
 aae
@@ -158839,7 +158731,7 @@ bRR
 bQA
 bSm
 bQA
-bQA
+bMi
 bQA
 bQA
 bQC
@@ -162098,13 +161990,13 @@ aae
 aae
 aae
 aae
-aaB
-aaB
 aae
-aaB
-aaB
-aaB
-aaB
+aae
+aae
+aae
+aae
+aae
+aae
 aae
 aae
 aae
@@ -162355,14 +162247,14 @@ aae
 aae
 aae
 aae
-aaB
-aaB
 aae
 aae
-aaB
-aaB
 aae
-aaB
+aae
+aae
+aae
+aae
+aae
 aae
 aae
 aae
@@ -162612,14 +162504,14 @@ aae
 aae
 aae
 aae
-aaB
-aaB
-aaB
-aaB
 aae
-aaB
-aaB
-aaB
+aae
+aae
+aae
+aae
+aae
+aae
+aae
 aae
 aae
 aae
@@ -162869,14 +162761,14 @@ aae
 aae
 aae
 aae
-aaB
-aaB
-aaB
 aae
-aaB
-aaB
-aaB
-aaB
+aae
+aae
+aae
+aae
+aae
+aae
+aae
 aae
 aae
 aae
@@ -163125,15 +163017,15 @@ aae
 aae
 aae
 aae
-aaB
-aaB
-aaB
-aaB
-aaB
-aaB
-bOo
-aaB
-aaB
+aae
+aae
+aae
+aae
+aae
+aae
+aae
+aae
+aae
 aae
 aae
 aae
@@ -163381,16 +163273,16 @@ aae
 aae
 aae
 aae
-aaB
-aaB
-aaB
-aaB
-aaB
-aaB
-aaB
-bOo
-aaB
-aaB
+aae
+aae
+aae
+aae
+aae
+aae
+aae
+aae
+aae
+aae
 aae
 aae
 aae
@@ -163638,16 +163530,16 @@ aae
 aae
 aae
 aae
-aaB
-aaB
-aaB
 aae
-aaB
-aaB
-aaB
-aaB
-aaB
-aaB
+aae
+aae
+aae
+aae
+aae
+aae
+aae
+aae
+aae
 aae
 aae
 aae
@@ -163896,15 +163788,15 @@ aae
 aae
 aae
 aae
-aaB
-aaB
 aae
-anO
-aaB
-aaB
-aaB
-aaB
-aaB
+aae
+aae
+aae
+aae
+aae
+aae
+aae
+aae
 aae
 aae
 aae
@@ -164153,15 +164045,15 @@ aae
 aae
 aae
 aae
-aaB
-aaB
 aae
 aae
-aaB
-aaB
-aaB
-aaB
-aaB
+aae
+aae
+aae
+aae
+aae
+aae
+aae
 aae
 aae
 aae
@@ -164410,16 +164302,16 @@ aae
 aae
 aae
 aae
-aaB
-aaB
-aaB
-aaB
-aaB
-aaB
-aaB
-aaB
-aaB
-aaB
+aae
+aae
+aae
+aae
+aae
+aae
+aae
+aae
+aae
+aae
 aae
 aae
 aae
@@ -164666,17 +164558,17 @@ aae
 aae
 aae
 aae
-aaB
-aaB
-aaB
-aaB
-aaB
-aaB
-aaB
-aaB
-aaB
-aaB
-aaB
+aae
+aae
+aae
+aae
+aae
+aae
+aae
+aae
+aae
+aae
+aae
 aae
 aae
 aae
@@ -164921,18 +164813,18 @@ aae
 aae
 aae
 aae
-aaa
-aaa
-aaB
-aaa
-aaa
-aaB
-aaB
 aae
-aaB
-anO
 aae
-aaB
+aae
+aae
+aae
+aae
+aae
+aae
+aae
+aae
+aae
+aae
 aae
 aae
 aae
@@ -165178,18 +165070,18 @@ aae
 aae
 aae
 aae
-aaa
-chc
-wGH
-chc
-aaa
-aaB
-aaB
-aaB
-aaB
 aae
 aae
-aaB
+aae
+aae
+aae
+aae
+aae
+aae
+aae
+aae
+aae
+aae
 aae
 aae
 aae
@@ -165435,18 +165327,18 @@ aae
 aae
 aae
 aae
-aaa
-aaa
-aaB
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
+aae
+aae
+aae
+aae
+aae
+aae
+aae
+aae
+aae
+aae
+aae
+aae
 aae
 aae
 aae
@@ -165691,19 +165583,19 @@ aae
 aae
 aae
 aae
-aaa
-aaa
-aaB
-aaB
-aaB
-aaB
-aaB
-aaB
-aaB
-aaB
-bLL
-fbO
-aaa
+aae
+aae
+aae
+aae
+aae
+aae
+aae
+aae
+aae
+aae
+aae
+aae
+aae
 aae
 aae
 aae
@@ -165947,20 +165839,20 @@ aae
 aae
 aae
 aae
-aaa
-aaa
-eOV
-aaB
-aaB
-aaB
-aaB
-aaB
-aaB
-aaB
-aaB
-aaB
-aaB
-aaa
+aae
+aae
+aae
+aae
+aae
+aae
+aae
+aae
+aae
+aae
+aae
+aae
+aae
+aae
 aae
 aae
 aae
@@ -166204,20 +166096,20 @@ aae
 aae
 aae
 aae
-aaa
-bLL
-aaB
-aaB
-aoj
-aaB
-aaB
-aaB
-aaB
-aaB
-aaB
-aaB
-aaB
-aaa
+aae
+aae
+aae
+aae
+aae
+aae
+aae
+aae
+aae
+aae
+aae
+aae
+aae
+aae
 aae
 aae
 aae
@@ -166460,21 +166352,21 @@ aae
 aae
 aae
 aae
-aaa
-aaa
-aaB
-aaB
-pfb
-aae
-jjW
-aaB
-bLL
 aae
 aae
 aae
 aae
 aae
-aaa
+aae
+aae
+aae
+aae
+aae
+aae
+aae
+aae
+aae
+aae
 aae
 aae
 aae
@@ -166716,22 +166608,22 @@ aae
 aae
 aae
 aae
-aaa
-aaa
-bLL
-aaB
-aaB
 aae
 aae
 aae
-aaB
-phS
 aae
 aae
-kmN
 aae
 aae
-aaa
+aae
+aae
+aae
+aae
+aae
+aae
+aae
+aae
+aae
 aae
 aae
 aae
@@ -166973,22 +166865,22 @@ aae
 aae
 aae
 aae
-aaa
-bnS
-aaB
-aaB
-aaB
-aaB
-aaB
-aaB
-aaB
 aae
 aae
-aaB
-bLL
 aae
 aae
-aaa
+aae
+aae
+aae
+aae
+aae
+aae
+aae
+aae
+aae
+aae
+aae
+aae
 aae
 aae
 aae
@@ -167230,22 +167122,22 @@ aae
 aae
 aae
 aae
-aaa
-aaB
-aaB
-aaB
 aae
-xFi
-aaB
-aaB
-aaB
-aaB
-aaB
-aaB
-aaa
-aaa
-aaa
-aaa
+aae
+aae
+aae
+aae
+aae
+aae
+aae
+aae
+aae
+aae
+aae
+aae
+aae
+aae
+aae
 aae
 aae
 aae
@@ -167487,19 +167379,19 @@ aae
 aae
 aae
 aae
-aaa
-bLL
-aaB
-aaB
-aae
-aae
-eOV
-bLL
 aae
 aae
 aae
 aae
-aaa
+aae
+aae
+aae
+aae
+aae
+aae
+aae
+aae
+aae
 aae
 aae
 aae
@@ -167744,19 +167636,19 @@ aae
 aae
 aae
 aae
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
+aae
+aae
+aae
+aae
+aae
+aae
+aae
+aae
+aae
+aae
+aae
+aae
+aae
 aae
 aae
 aae
