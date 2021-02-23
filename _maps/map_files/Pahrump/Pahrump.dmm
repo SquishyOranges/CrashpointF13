@@ -32091,7 +32091,7 @@
 /turf/open/indestructible/ground/inside/subway,
 /area/f13/sewer)
 "bQB" = (
-/turf/closed/mineral/random/low_chance,
+/turf/closed/mineral/random/high_chance,
 /area/f13/sewer)
 "bQC" = (
 /turf/closed/wall/f13/wood,
@@ -114378,10 +114378,10 @@ aaa
 aae
 aae
 aae
-aae
-aae
-aae
-aae
+bKO
+bKO
+bKO
+bKO
 bKO
 bKO
 bKO
@@ -114635,10 +114635,10 @@ aaa
 aae
 aae
 aae
-aae
-aae
-aae
-aae
+bKO
+bKO
+bKO
+bKO
 bKO
 bKO
 bKO
@@ -114892,10 +114892,10 @@ aaa
 aae
 aae
 aae
-aae
-aae
-aae
-aae
+bKO
+bKO
+bKO
+bKO
 bKO
 bKO
 bKO
@@ -115149,10 +115149,10 @@ aaa
 aae
 aae
 aae
-aae
-aae
-aae
-aae
+bKO
+bKO
+bKO
+bKO
 cUo
 cUo
 cUo
