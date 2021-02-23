@@ -13,12 +13,36 @@
 	disliked_food = GROSS
 	liked_food = JUNKFOOD | FRIED | RAW
 
+/datum/species/ghoul/handle_chemicals(datum/reagent/chem, mob/living/carbon/human/H)
+	if(chem.id == "radium")//The healing here stacks with spec_life, as it adds additional radiaiton as it processes, providing double the healing.
+		H.adjustCloneLoss(-1)
+		H.adjustToxLoss(-1)
+		H.adjustFireLoss(-1)
+		H.adjustBruteLoss(-1)
+		if(prob(15))
+			to_chat(H, "<span class='notice'>Your skin glows faintly as you feel your wounds mending themselves.</span>")
+		return 1
+
+/datum/species/ghoul/spec_life(mob/living/carbon/human/H)
+	var/datum/component/radioactive/radiation = GetComponent(/datum/component/radioactive)
+	if(radiation)
+		if(radiation > RAD_MOB_HEAL)//Have to chug radioactive material. The only way for a Ghoul to get this state.
+			H.adjustToxLoss(-2)
+			H.adjustFireLoss(-1)
+			H.adjustBruteLoss(-1)
+			H.adjustCloneLoss(-1)
+			if(prob(15))
+				to_chat(H, "<span class='notice'>Your skin glows faintly as you feel your wounds mending themselves.</span>")
+
+			return 1
+
 //Ghouls have weak limbs.
 /datum/species/ghoul/on_species_gain(mob/living/carbon/C, datum/species/old_species)
 	..()
 	for(var/obj/item/bodypart/b in C.bodyparts)
 		b.max_damage -= 10
 	C.faction |= "ghoul"
+
 /datum/species/ghoul/on_species_loss(mob/living/carbon/C)
 	..()
 	C.faction -= "ghoul"
@@ -45,7 +69,9 @@
 	punchstunthreshold = 6
 	use_skintones = 0
 	sexes = 1
-	blacklisted = FALSE
+	blacklisted = FALSE//Change to true if you don't want this playable. Or, y'know, change the config.
+	var/last_event = 0
+	var/active = null
 
 //Ghouls have weak limbs.
 /datum/species/ghoul/glowing/on_species_gain(mob/living/carbon/C, datum/species/old_species)
@@ -64,4 +90,23 @@
 		b.max_damage = initial(b.max_damage)
 	SSradiation.processing -= C
 
+/datum/species/ghoul/glowing/spec_life(mob/living/carbon/human/H)
+	var/datum/component/radioactive/radiation = GetComponent(/datum/component/radioactive)
+//Quite literally just ripped from Uranium Golem. You'd think it redundant because of the above, but it's not.
+	if(!active)
+		if(world.time > last_event+30)
+			active = 1
+			radiation_pulse(H, 50)
+			last_event = world.time
+			active = null
+	if(radiation)
+		if(radiation > RAD_MOB_HEAL)//Have to chug radioactive material. The only way for a Ghoul to get this state.
+			H.adjustToxLoss(-2)
+			H.adjustFireLoss(-1)
+			H.adjustBruteLoss(-1)
+			H.adjustCloneLoss(-1)
+			if(prob(15))
+				to_chat(H, "<span class='notice'>Your skin glows faintly as you feel your wounds mending themselves.</span>")
 
+			return 1
+	..()

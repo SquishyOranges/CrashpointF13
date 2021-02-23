@@ -17,6 +17,8 @@ Ask ninjanomnom if they're around
 													// WARNING: This number is highly sensitive to change, graph is first for best results
 #define RAD_BURN_THRESHOLD 250						// Applied radiation must be over this to burn
 
+#define RAD_MOB_HEAL 50								// How much stored radiation in a ghoul for them to start healing
+
 #define RAD_MOB_SAFE 125							// How much stored radiation in a mob with no ill effects
 
 #define RAD_MOB_HAIRLOSS 550						// How much stored radiation to check for hair loss
