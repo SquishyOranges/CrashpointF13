@@ -125,10 +125,14 @@
 			RadBurst()
 
 /mob/living/simple_animal/hostile/ghoul/glowing/proc/RadBurst()
-	radiation_pulse(src, 10, 5)
-	src.visible_message("<span class='warning'>[src] growls and releases a burst of radiation from its body!</span>",
+	visible_message("<span class='warning'>[src] growls and releases a burst of radiation from its body!</span>",
 						"<span class='notice'>You release a concentrated burst of radiation from your body!</span>")
 	playsound(src, 'sound/f13npc/ghoul_radburst.ogg', 50, 0, 3)
+	for(var/mob/living/simple_animal/hostile/ghoul/G in range(7, src))
+		if(G.stat == 3)
+			G.revive(1)
+		else
+			G.revive(1, 1)
 	set_light(7, 5, "#39FF14")
 	spawn(40)
 	set_light(2)
