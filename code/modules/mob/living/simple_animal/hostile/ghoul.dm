@@ -98,6 +98,7 @@
 	harm_intent_damage = 10
 	melee_damage_lower = 20
 	melee_damage_upper = 20
+	var/radburst_cooldown = 60
 
 /mob/living/simple_animal/hostile/ghoul/glowing/Initialize()
 	. = ..()
@@ -112,6 +113,25 @@
 	if(. && ishuman(target))
 		var/mob/living/carbon/human/H = target
 		H.apply_effect(20, EFFECT_IRRADIATE, 0)
+
+/mob/living/simple_animal/hostile/ghoul/glowing/handle_automated_action()
+	if(!..()) //AIStatus is off
+		return
+	radburst_cooldown--
+
+	if(target in range(3,src))
+		if((health <= (0.6 * maxHealth)) && radburst_cooldown<=0)
+			radburst_cooldown = initial(radburst_cooldown)
+			RadBurst()
+
+/mob/living/simple_animal/hostile/ghoul/glowing/proc/RadBurst()
+	radiation_pulse(src, 10, 5)
+	src.visible_message("<span class='warning'>[src] growls and releases a burst of radiation from its body!</span>",
+						"<span class='notice'>You release a concentrated burst of radiation from your body!</span>")
+	playsound(src, 'sound/f13npc/ghoul_radburst.ogg', 50, 0, 3)
+	set_light(7, 5, "#39FF14")
+	spawn(40)
+	set_light(2)
 
 /mob/living/simple_animal/hostile/ghoul/frozen
 	name = "frozen feral ghoul"
