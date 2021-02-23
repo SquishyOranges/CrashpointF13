@@ -128,6 +128,7 @@
 	visible_message("<span class='warning'>[src] growls and releases a burst of radiation from its body!</span>",
 						"<span class='notice'>You release a concentrated burst of radiation from your body!</span>")
 	playsound(src, 'sound/f13npc/ghoul_radburst.ogg', 50, 0, 3)
+	radiation_pulse(src, 30)
 	for(var/mob/living/simple_animal/hostile/ghoul/G in range(7, src))
 		if(G.stat == 3)
 			G.revive(1)
