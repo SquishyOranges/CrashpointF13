@@ -23136,7 +23136,9 @@
 /area/f13/raider_mall)
 "bmV" = (
 /obj/effect/decal/cleanable/shreds,
-/turf/open/space/basic,
+/turf/open/floor/plasteel/f13{
+	icon_state = "dark"
+	},
 /turf/open/floor/plating{
 	icon_state = "platingdmg2"
 	},
@@ -35501,7 +35503,6 @@
 /area/f13/underground/mountain)
 "lPb" = (
 /turf/open/floor/plating/f13/outside/road,
-/turf/open/space/basic,
 /area/f13/desert)
 "lZs" = (
 /obj/structure/bed/mattress/pregame,
