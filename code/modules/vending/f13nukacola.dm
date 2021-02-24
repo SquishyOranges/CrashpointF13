@@ -6,7 +6,7 @@
 	product_slogans = "Take the leap... enjoy a Quantum!"
 	products = list(/obj/item/reagent_containers/food/drinks/bottle/nukacola = 20)
 	contraband = list(/obj/item/reagent_containers/food/drinks/soda_cans/f13nukacola = 4)
-	premium = list(/obj/item/reagent_containers/food/drinks/drinkingglass/filled/nuka_cola = 1) //REAl nuka cola
+	premium = list(/obj/item/reagent_containers/food/drinks/drinkingglass/filled/nuka_cola = 1) //Actual Nuka Cola
 	refill_canister = /obj/item/vending_refill/nukacolavend
 
 /obj/machinery/vending/nukacolavend/New()
@@ -21,7 +21,7 @@
 	product_slogans = "Take the leap... enjoy a Quantum!"
 	products = list(/obj/item/reagent_containers/food/drinks/soda_cans/f13nukacola = 20)
 	contraband = list(/obj/item/reagent_containers/food/drinks/soda_cans/f13nukacola = 10)
-	premium = list(/obj/item/reagent_containers/food/drinks/drinkingglass/filled/nuka_cola = 3) //REAl nuka cola
+	premium = list(/obj/item/reagent_containers/food/drinks/drinkingglass/filled/nuka_cola = 3) //Actual Nuka Cola
 	refill_canister = /obj/item/vending_refill/nukacolavendfull
 
 /obj/machinery/vending/nukacolavendfull/New()

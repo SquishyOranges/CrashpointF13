@@ -414,7 +414,7 @@
 	..()
 
 /datum/reagent/consumable/nuka_cola
-	name = "Nuka Cola"
+	name = "Pristine Nuka-Cola"
 	id = "nuka_cola"
 	description = "Cola, cola never changes."
 	color = "#100800" // rgb: 16, 8, 0
@@ -788,12 +788,12 @@
 
 // FALLOUT DRINKS BELLOW
 
-// Nuka-Cola and it's many variations!
+// Nuka-Cola and other many variations!
 
 /datum/reagent/consumable/f13_nukacola
-	name = "Nuka-Cola"
+	name = "Flat Nuka-Cola"
 	id = "nuka"
-	description = "One of the most popular drinks of the pre-and-post war community!"
+	description = "One of the most popular drinks of the pre-and-post war community! Too bad that it's flat..."
 	color = "#2B1105"
 	taste_description = "flat sugary goodness"
 	glass_name = "glass of Nuka-Cola"

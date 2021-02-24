@@ -425,6 +425,7 @@
 		"water",
 		"coffee",
 		"tea",
+		"nuka_cola",
 		"nuka",
 		"nukavictory",
 		"nukaquartz",
