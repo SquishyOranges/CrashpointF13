@@ -35503,7 +35503,6 @@
 /area/f13/underground/mountain)
 "lPb" = (
 /turf/open/floor/plating/f13/outside/road,
-/turf/open/space/basic,
 /area/f13/desert)
 "lZs" = (
 /obj/structure/bed/mattress/pregame,
