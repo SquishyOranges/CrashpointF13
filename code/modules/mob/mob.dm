@@ -32,9 +32,7 @@
 			continue
 		var/datum/atom_hud/alternate_appearance/AA = v
 		AA.onNewMob(src)
-	nutrition = rand(NUTRITION_LEVEL_START_MIN, NUTRITION_LEVEL_START_MAX)
-	. = ..()
-	water = rand(THIRST_LEVEL_START_MIN, THIRST_LEVEL_START_MAX)
+	set_nutrition(rand(NUTRITION_LEVEL_START_MIN, NUTRITION_LEVEL_START_MAX), rand(THIRST_LEVEL_START_MIN, THIRST_LEVEL_START_MAX))
 	. = ..()
 
 /mob/GenerateTag()
@@ -938,3 +936,7 @@
 		return
 	if(client && pulling_delay)
 		client.move_delay += pulling_delay
+
+/mob/proc/set_nutrition(nutrition_change, thirst_change)
+	nutrition = max(0, nutrition_change)
+	water = max(0, thirst_change)
