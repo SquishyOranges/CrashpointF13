@@ -1813,6 +1813,7 @@
 	name = "Super Stimpak"
 	result = /obj/item/reagent_containers/hypospray/medipen/stimpak/super
 	reqs = list(/datum/reagent/medicine/stimpak = 10,
+				/obj/item/reagent_containers/hypospray/medipen/stimpak = 1,
 				/obj/item/stack/sheet/leather = 1,
 				/obj/item/reagent_containers/food/snacks/grown/mutfruit = 1)
 	tools = list(TOOL_WORKBENCH)
