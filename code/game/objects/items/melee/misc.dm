@@ -44,7 +44,7 @@
 	attack_verb = list("attacked", "slashed", "stabbed", "sliced", "torn", "ripped", "diced", "cut")
 	sharpness = IS_SHARP
 
-/obj/item/melee/synthetic_arm_blade/Initialize()
+/obj/item/melee/synthetic_arm_blade/ComponentInitialize()
 	. = ..()
 	AddComponent(/datum/component/butchering, 60, 80) //very imprecise
 
@@ -67,7 +67,7 @@
 	hitsound = 'sound/weapons/rapierhit.ogg'
 	materials = list(MAT_METAL = 1000)
 
-/obj/item/melee/sabre/Initialize()
+/obj/item/melee/sabre/ComponentInitialize()
 	. = ..()
 	AddComponent(/datum/component/butchering, 30, 95, 5) //fast and effective, but as a sword, it might damage the results.
 

@@ -379,7 +379,7 @@
 	sharpness = IS_SHARP
 	attack_verb = list("chopped", "sliced", "cut", "reaped")
 
-/obj/item/nullrod/scythe/Initialize()
+/obj/item/nullrod/scythe/ComponentInitialize()
 	. = ..()
 	AddComponent(/datum/component/butchering, 70, 110) //the harvest gives a high bonus chance
 
@@ -487,7 +487,7 @@
 	attack_verb = list("sawed", "torn", "cut", "chopped", "diced")
 	hitsound = 'sound/weapons/chainsawhit.ogg'
 
-/obj/item/nullrod/chainsaw/Initialize()
+/obj/item/nullrod/chainsaw/ComponentInitialize()
 	. = ..()
 	AddComponent(/datum/component/butchering, 30, 100, 0, hitsound)
 
@@ -558,7 +558,7 @@
 	w_class = WEIGHT_CLASS_HUGE
 	sharpness = IS_SHARP
 
-/obj/item/nullrod/armblade/Initialize()
+/obj/item/nullrod/armblade/ComponentInitialize()
 	. = ..()
 	AddComponent(/datum/component/butchering, 80, 70)
 
@@ -620,6 +620,9 @@
 /obj/item/nullrod/tribal_knife/Initialize(mapload)
 	. = ..()
 	START_PROCESSING(SSobj, src)
+
+/obj/item/nullrod/tribal_knife/ComponentInitialize()
+	. = ..()
 	AddComponent(/datum/component/butchering, 50, 100)
 
 /obj/item/nullrod/tribal_knife/Destroy()

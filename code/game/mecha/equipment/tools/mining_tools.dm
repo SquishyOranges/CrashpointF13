@@ -16,7 +16,7 @@
 	var/drill_delay = 7
 	var/drill_level = DRILL_BASIC
 
-/obj/item/mecha_parts/mecha_equipment/drill/Initialize()
+/obj/item/mecha_parts/mecha_equipment/drill/ComponentInitialize()
 	. = ..()
 	AddComponent(/datum/component/butchering, 50, 100)
 

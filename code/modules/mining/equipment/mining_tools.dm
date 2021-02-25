@@ -113,7 +113,7 @@
 	attack_verb = list("bashed", "bludgeoned", "thrashed", "whacked")
 	sharpness = IS_SHARP
 
-/obj/item/shovel/Initialize()
+/obj/item/shovel/ComponentInitialize()
 	. = ..()
 	AddComponent(/datum/component/butchering, 150, 40) //it's sharp, so it works, but barely.
 

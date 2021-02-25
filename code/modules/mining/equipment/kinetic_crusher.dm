@@ -28,7 +28,7 @@
 	var/detonation_damage = 50
 	var/backstab_bonus = 30
 
-/obj/item/twohanded/required/kinetic_crusher/Initialize()
+/obj/item/twohanded/required/kinetic_crusher/ComponentInitialize()
 	. = ..()
 	AddComponent(/datum/component/butchering, 60, 110) //technically it's huge and bulky, but this provides an incentive to use it
 
