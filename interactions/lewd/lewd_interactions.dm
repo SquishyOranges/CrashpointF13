@@ -74,8 +74,7 @@
 			if(user.client && user.client.prefs)
 				if(user.client.prefs.wasteland_toggles & VERB_CONSENT)
 					return TRUE
-				else
-					return FALSE
+			return FALSE
 		return TRUE
 	return FALSE
 
