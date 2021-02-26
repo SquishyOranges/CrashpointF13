@@ -748,6 +748,8 @@
 	spirits = list()
 	START_PROCESSING(SSobj, src)
 	GLOB.poi_list |= src
+
+/obj/item/melee/ghost_sword/ComponentInitialize()
 	AddComponent(/datum/component/butchering, 150, 90)
 
 /obj/item/melee/ghost_sword/Destroy()

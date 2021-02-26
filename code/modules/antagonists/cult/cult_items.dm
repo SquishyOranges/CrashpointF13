@@ -43,7 +43,7 @@
 	hitsound = 'sound/weapons/bladeslice.ogg'
 	attack_verb = list("attacked", "slashed", "stabbed", "sliced", "torn", "ripped", "diced", "rended")
 
-/obj/item/melee/cultblade/Initialize()
+/obj/item/melee/cultblade/ComponentInitialize()
 	. = ..()
 	AddComponent(/datum/component/butchering, 40, 100)
 
@@ -112,6 +112,8 @@
 	set_light(4)
 	jaunt = new(src)
 	linked_action = new(src)
+
+/obj/item/twohanded/required/cult_bastard/ComponentInitialize()
 	AddComponent(/datum/component/butchering, 50, 80)
 
 /obj/item/twohanded/required/cult_bastard/examine(mob/user)
@@ -661,7 +663,7 @@
 	hitsound = 'sound/weapons/bladeslice.ogg'
 	var/datum/action/innate/cult/spear/spear_act
 
-/obj/item/twohanded/cult_spear/Initialize()
+/obj/item/twohanded/cult_spear/ComponentInitialize()
 	. = ..()
 	AddComponent(/datum/component/butchering, 100, 90)
 

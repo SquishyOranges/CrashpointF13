@@ -90,7 +90,7 @@
 						"Command Blue" = "pen-fountain-cb"
 						)
 
-/obj/item/pen/fountain/captain/Initialize()
+/obj/item/pen/fountain/captain/ComponentInitialize()
 	. = ..()
 	AddComponent(/datum/component/butchering, 200, 115) //the pen is mightier than the sword
 
@@ -179,7 +179,7 @@
 	attack_verb = list("slashed", "stabbed", "sliced", "torn", "ripped", "diced", "cut") //these wont show up if the pen is off
 	var/on = FALSE
 
-/obj/item/pen/edagger/Initialize()
+/obj/item/pen/edagger/ComponentInitialize()
 	. = ..()
 	AddComponent(/datum/component/butchering, 60, 100, 0, 'sound/weapons/blade1.ogg', TRUE)
 

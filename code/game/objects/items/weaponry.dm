@@ -104,6 +104,9 @@ for further reading, please see: https://github.com/tgstation/tgstation/pull/301
 	force = 25
 	sharpness = IS_BLUNT
 
+/obj/item/claymore/machete/pipe/ComponentInitialize()
+	return
+
 /obj/item/claymore/machete/warclub
 	name = "war club"
 	desc = "A simple carved wooden club with turquoise inlays."
@@ -115,6 +118,9 @@ for further reading, please see: https://github.com/tgstation/tgstation/pull/301
 	block_chance = 10
 	armour_penetration = 5
 	sharpness = IS_BLUNT
+
+/obj/item/claymore/machete/warclub/ComponentInitialize()
+	return
 
 /obj/item/claymore/machete/pipe/tireiron
 	name = "tire iron"
@@ -131,6 +137,9 @@ for further reading, please see: https://github.com/tgstation/tgstation/pull/301
 	attack_verb = list("mashed", "bashed", "piped", "hit", "bludgeoned", "whacked", "bonked")
 	force = 25
 	sharpness = IS_BLUNT
+
+/obj/item/claymore/machete/golf/ComponentInitialize()
+	return
 
 /obj/item/claymore/machete/golf/teniron
 	name = "10 iron"
@@ -156,7 +165,7 @@ for further reading, please see: https://github.com/tgstation/tgstation/pull/301
 	user.visible_message("<span class='suicide'>[user] keeps hitting \himself with the [src.name]! It looks like \he's trying to commit suicide.</span>")
 	return (BRUTELOSS|FIRELOSS)
 
-/obj/item/claymore/Initialize()
+/obj/item/claymore/ComponentInitialize()
 	. = ..()
 	AddComponent(/datum/component/butchering, 40, 105)
 

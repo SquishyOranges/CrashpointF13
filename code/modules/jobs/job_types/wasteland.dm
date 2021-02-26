@@ -139,7 +139,7 @@ Raider
 		/obj/item/clothing/suit/armor/f13/raider/yankee, \
 		/obj/item/clothing/suit/armor/f13/raider/sadist, \
 		/obj/item/clothing/suit/armor/f13/raider/blastmaster, \
-		/obj/item/clothing/suit/armor/f13/badlands, \
+		/obj/item/clothing/suit/armor/f13/raider/badlands, \
 		/obj/item/clothing/suit/armor/f13/raider/painspike)
 	if(prob(10))
 		mask = pick(
@@ -209,7 +209,7 @@ Raider
 
 /datum/outfit/loadout/raider_badlands
 	name = "Badlands"
-	suit = /obj/item/clothing/suit/armor/f13/badlands
+	suit = /obj/item/clothing/suit/armor/f13/raider/badlands
 	head = /obj/item/clothing/head/helmet/f13/fiend
 
 /datum/outfit/loadout/raider_painspike

@@ -253,8 +253,6 @@ GLOBAL_LIST_INIT(plastitaniumglass_recipes, list(
 
 /obj/item/shard/Initialize()
 	. = ..()
-	AddComponent(/datum/component/caltrop, force)
-	AddComponent(/datum/component/butchering, 150, 65)
 	icon_state = pick("large", "medium", "small")
 	switch(icon_state)
 		if("small")
@@ -266,6 +264,11 @@ GLOBAL_LIST_INIT(plastitaniumglass_recipes, list(
 		if("large")
 			pixel_x = rand(-5, 5)
 			pixel_y = rand(-5, 5)
+
+/obj/item/shard/ComponentInitialize()
+	. = ..()
+	AddComponent(/datum/component/caltrop, force)
+	AddComponent(/datum/component/butchering, 150, 65)
 
 /obj/item/shard/afterattack(atom/A as mob|obj, mob/user, proximity)
 	. = ..()

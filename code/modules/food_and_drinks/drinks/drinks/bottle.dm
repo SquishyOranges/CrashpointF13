@@ -132,7 +132,7 @@
 	var/icon/broken_outline = icon('icons/obj/drinks.dmi', "broken")
 	sharpness = IS_SHARP
 
-/obj/item/broken_bottle/Initialize()
+/obj/item/broken_bottle/ComponentInitialize()
 	. = ..()
 	AddComponent(/datum/component/butchering, 200, 55)
 

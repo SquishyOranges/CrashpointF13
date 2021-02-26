@@ -101,7 +101,7 @@
 	hitsound = 'sound/weapons/bladeslice.ogg'
 	sharpness = IS_SHARP
 
-/obj/item/hatchet/Initialize()
+/obj/item/hatchet/ComponentInitialize()
 	. = ..()
 	AddComponent(/datum/component/butchering, 70, 100)
 
@@ -128,7 +128,7 @@
 	hitsound = 'sound/weapons/bladeslice.ogg'
 	var/swiping = FALSE
 
-/obj/item/scythe/Initialize()
+/obj/item/scythe/ComponentInitialize()
 	. = ..()
 	AddComponent(/datum/component/butchering, 90, 105)
 
