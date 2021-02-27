@@ -175,7 +175,7 @@
 	w_class = WEIGHT_CLASS_HUGE
 	sharpness = IS_SHARP
 
-/obj/item/light_eater/Initialize()
+/obj/item/light_eater/ComponentInitialize()
 	. = ..()
 	AddComponent(/datum/component/butchering, 80, 70)
 

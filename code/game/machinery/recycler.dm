@@ -18,11 +18,13 @@
 	var/item_recycle_sound = 'sound/items/welder.ogg'
 
 /obj/machinery/recycler/Initialize()
-	AddComponent(/datum/component/material_container, list(MAT_METAL, MAT_GLASS, MAT_PLASMA, MAT_SILVER, MAT_GOLD, MAT_DIAMOND, MAT_URANIUM, MAT_BANANIUM, MAT_TITANIUM, MAT_BLUESPACE, MAT_PLASTIC), INFINITY, FALSE, null, null, null, TRUE)
-	AddComponent(/datum/component/butchering, 1, amount_produced,amount_produced/5)
 	. = ..()
 	update_icon()
 	req_one_access = get_all_accesses() + get_all_centcom_access()
+
+/obj/machinery/recycler/ComponentInitialize()
+	AddComponent(/datum/component/material_container, list(MAT_METAL, MAT_GLASS, MAT_PLASMA, MAT_SILVER, MAT_GOLD, MAT_DIAMOND, MAT_URANIUM, MAT_BANANIUM, MAT_TITANIUM, MAT_BLUESPACE, MAT_PLASTIC), INFINITY, FALSE, null, null, null, TRUE)
+	AddComponent(/datum/component/butchering, 1, amount_produced,amount_produced/5)
 
 /obj/machinery/recycler/RefreshParts()
 	var/amt_made = 0

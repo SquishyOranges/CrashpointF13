@@ -229,7 +229,7 @@
 				/obj/item/clothing/head/helmet/f13/raider/yankee
 				)
 	var/loot7 = list(
-				/obj/item/clothing/suit/armor/f13/badlands,
+				/obj/item/clothing/suit/armor/f13/raider/badlands,
 				/obj/item/clothing/head/helmet/f13/fiend
 				)
 	var/loot8 = list(

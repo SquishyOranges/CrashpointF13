@@ -391,12 +391,12 @@
 	name = "reinforced yankee raider armor"
 	armor = list("melee" = 40, "bullet" = 40, "laser" = 30, "energy" = 25, "bomb" = 35, "bio" = 0, "rad" = 0, "fire" = 30, "acid" = 30)
 
-/obj/item/clothing/suit/armor/f13/badlands
+/obj/item/clothing/suit/armor/f13/raider/badlands
 	name = "badlands raider armor"
 	icon_state = "badlands"
 	item_state = "badlands"
 
-/obj/item/clothing/suit/armor/f13/badlands/reinforced
+/obj/item/clothing/suit/armor/f13/raider/badlands/reinforced
 	name = "reinforced badlands raider armor"
 	armor = list("melee" = 40, "bullet" = 40, "laser" = 30, "energy" = 25, "bomb" = 35, "bio" = 0, "rad" = 0, "fire" = 30, "acid" = 30)
 

@@ -234,7 +234,7 @@
 	armor = list("melee" = 0, "bullet" = 0, "laser" = 0, "energy" = 0, "bomb" = 0, "bio" = 0, "rad" = 0, "fire" = 100, "acid" = 30)
 	resistance_flags = FIRE_PROOF
 
-/obj/item/twohanded/fireaxe/Initialize()
+/obj/item/twohanded/fireaxe/ComponentInitialize()
 	. = ..()
 	AddComponent(/datum/component/butchering, 100, 80, 0 , hitsound) //axes are not known for being precision butchering tools
 
@@ -475,7 +475,7 @@
 	var/obj/item/grenade/explosive = null
 	var/war_cry = "AAAAARGH!!!"
 
-/obj/item/twohanded/spear/Initialize()
+/obj/item/twohanded/spear/ComponentInitialize()
 	. = ..()
 	AddComponent(/datum/component/butchering, 100, 70) //decent in a pinch, but pretty bad.
 
@@ -621,7 +621,7 @@
 	actions_types = list(/datum/action/item_action/startchainsaw)
 	var/on = FALSE
 
-/obj/item/twohanded/required/chainsaw/Initialize()
+/obj/item/twohanded/required/chainsaw/ComponentInitialize()
 	. = ..()
 	AddComponent(/datum/component/butchering, 30, 100, 0, 'sound/weapons/chainsawhit.ogg', TRUE)
 
@@ -799,7 +799,7 @@
 	slot_flags = ITEM_SLOT_BACK
 	hitsound = 'sound/weapons/bladeslice.ogg'
 
-/obj/item/twohanded/vibro_weapon/Initialize()
+/obj/item/twohanded/vibro_weapon/ComponentInitialize()
 	. = ..()
 	AddComponent(/datum/component/butchering, 20, 105)
 
