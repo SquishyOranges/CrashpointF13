@@ -80,6 +80,12 @@
 	glass_desc = "Smells suspicious."
 	shot_glass_icon_state = "shotglasscream"
 
+/datum/chemical_reaction/cum
+	name = "cum"
+	id = "cum"
+	results = list("cum" = 2)
+	required_reagents = list("sodium" = 1, "water" = 1, "limejuice" = 1)
+
 /datum/reagent/consumable/cum/reaction_turf(turf/T, reac_volume)
 	if(!istype(T))
 		return
