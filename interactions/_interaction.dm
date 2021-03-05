@@ -48,6 +48,9 @@ var/list/interactions
 	var/needs_physical_contact
 
 /datum/interaction/proc/evaluate_user(mob/living/carbon/human/user, silent = TRUE)
+	if(user.stat == DEAD)
+		return FALSE
+
 	if(user.refactory_period)
 		if(!silent) //bye spam
 			to_chat(user, "<span class='warning'>You're still questioning your actions and how yourself got into this situation. You need to wait [DisplayTimeText(user.refactory_period * 10, TRUE)] until you can make your parents ashamed even more!</span>")
