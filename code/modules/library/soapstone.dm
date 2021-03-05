@@ -62,6 +62,7 @@
 			playsound(loc, 'sound/items/gavel.ogg', 50, 1, -1)
 			var/obj/structure/chisel_message/M = new(T)
 			M.register(user, message)
+			message_admins("[ADMIN_LOOKUPFLW(user)] has left a soapstone message, ([message]), located at [ADMIN_VERBOSEJMP(T)]</a>.")
 			remove_use()
 
 /obj/item/soapstone/proc/can_use()
