@@ -44,13 +44,18 @@
 
 
 /obj/item/bodypart/chest/dismember()
-	return FALSE
 	if(!owner)
 		return FALSE
+
 	var/mob/living/carbon/C = owner
+
 	if(!dismemberable)
 		return FALSE
+
 	if(C.has_trait(TRAIT_NODISMEMBER))
+		return FALSE
+
+	if(C.stat == CONSCIOUS)//Don't want someone 'awake' having this happen, for balance reasons.
 		return FALSE
 
 	var/organ_spilled = 0
