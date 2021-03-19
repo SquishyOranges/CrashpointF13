@@ -275,5 +275,8 @@
 #define AI_CAMERA_LUMINOSITY	5
 #define AI_VOX // Comment out if you don't want VOX to be enabled and have players download the voice sounds.
 
+//typing indicator
+#define TYPING_INDICATOR_TIMEOUT 5 MINUTES
+
 //Respawn timer
 #define RESPAWN_TIMER 3000 // in deciseconds, the time to wait before allowing respawn. 15 minutes = 15 * 60 (seconds in minute) * 15 (seconds to deciseconds)
