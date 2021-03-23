@@ -24,7 +24,7 @@
 	return me_verb(message)
 
 /mob/verb/say_verb(message as text)
-	set name = "say_noindicator"
+	set name = "say"
 	set hidden = TRUE
 	set category = "IC"
 	if(!length(message))
@@ -53,8 +53,8 @@
 	say(message, language) //only living mobs actually whisper, everything else just talks
 
 /mob/verb/me_verb(message as text) //Moving from message to text because single-line input boxes are more user-friendly
-	set name = "me_noindicator"
-	set hidden = TRUE
+	set name = "me"
+	set hidden = FALSE
 	set category = "IC"
 	if(GLOB.say_disabled)	//This is here to try to identify lag problem
 		to_chat(usr, "<span class='danger'>Speech is currently admin-disabled.</span>")
