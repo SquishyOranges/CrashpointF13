@@ -40465,6 +40465,15 @@
 	tag = "icon-dirtcorner (EAST)"
 	},
 /area/f13/wasteland)
+"lNZ" = (
+/obj/structure/closet/cabinet,
+/obj/item/tank/internals/oxygen,
+/obj/item/tank/internals/oxygen,
+/obj/item/tank/internals/oxygen,
+/obj/item/tank/internals/oxygen,
+/obj/item/tank/internals/oxygen,
+/turf/open/floor/f13/wood,
+/area/f13/legion)
 "lRH" = (
 /obj/structure/decoration/clock/old{
 	pixel_x = -32
@@ -97937,7 +97946,7 @@ bhh
 brf
 aaI
 aaI
-bwX
+lNZ
 brd
 bvv
 acv
