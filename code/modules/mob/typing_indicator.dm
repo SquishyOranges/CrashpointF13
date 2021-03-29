@@ -21,7 +21,7 @@ GLOBAL_LIST_EMPTY(typing_indicator_overlays)
   * @param state_override - Sets the state that we will fetch. Defaults to src.get_typing_indicator_icon_state()
   * @param force - shows even if src.typing_indcator_enabled is FALSE.
   */
-/mob/proc/display_typing_indicator(timeout_override = TYPING_INDICATOR_TIMEOUT, state_override = get_typing_indicator_icon_state(), force = FALSE)
+/mob/proc/display_typing_indicator(timeout_override = TYPING_INDICATOR_TIMEOUT, state_override = get_typing_indicator_icon_state(), force = TRUE)
 	if((!typing_indicator_enabled && !force) || typing_indicator_current)
 		return
 	typing_indicator_current = state_override
