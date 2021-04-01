@@ -35502,8 +35502,11 @@
 /turf/closed/wall/mineral/wood,
 /area/f13/underground/mountain)
 "lPb" = (
-/turf/open/floor/plating/f13/outside/road,
-/area/f13/desert)
+/obj/machinery/vending/clothing,
+/turf/open/floor/wood/f13/old{
+	icon_state = "housebase"
+	},
+/area/f13/raider_mall)
 "lZs" = (
 /obj/structure/bed/mattress/pregame,
 /turf/open/floor/wood/f13/old,
@@ -98058,7 +98061,7 @@ bft
 bjO
 bks
 bkZ
-blD
+lPb
 blZ
 bmz
 bfd
@@ -149400,7 +149403,7 @@ aab
 aFF
 aab
 aCN
-lPb
+qLG
 aDU
 aao
 aCN

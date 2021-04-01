@@ -1543,6 +1543,14 @@
 	result = /obj/structure/curtain
 	category = CAT_MISC
 
+/datum/crafting_recipe/shower
+	name = "shower"
+	result = /obj/machinery/shower
+	reqs = list(/obj/item/stack/sheet/metal = 10,
+				/obj/item/stack/sheet/glass = 5)
+	time = 80
+	category = CAT_MISC
+
 /datum/crafting_recipe/smallcarton
 	name = "Small Carton"
 	result = /obj/item/reagent_containers/food/drinks/sillycup/smallcarton

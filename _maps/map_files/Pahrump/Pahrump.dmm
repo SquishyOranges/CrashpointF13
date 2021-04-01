@@ -40883,6 +40883,10 @@
 	},
 /turf/open/indestructible/ground/inside/mountain,
 /area/f13/caves)
+"oqk" = (
+/obj/machinery/vending/clothing,
+/turf/open/floor/f13/wood,
+/area/f13/building)
 "ouN" = (
 /obj/structure/chair/wood{
 	dir = 1;
@@ -77368,7 +77372,7 @@ ahj
 bif
 anB
 alc
-alc
+oqk
 abP
 aqQ
 ang
